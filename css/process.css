@@ -1,0 +1,303 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+#bodyprocess{
+    background-image: url('../images/process.png');
+    background-size: cover;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+}
+
+#processnav{
+    display: block;
+}
+
+.intropopup{
+	position: fixed;
+    z-index: 1000000;
+    width: 30%;
+    height: 37%;
+    background-color: white;
+    padding: 4%;
+    border-radius: 30px;
+    display: none;
+	display: block;
+	left: 30%;
+	top: 25%;
+}
+
+.intropopup .heading{
+    font-family: 'Lexend Deca';
+    font-weight: 600;
+    color: #5785f6;
+    font-size: 40px;
+    text-align: center;
+}
+
+.intropopup p{
+	color: black;
+	font-size: 12pt;
+	font-weight: 300;
+	font-family: 'Raleway';
+	line-height: 18pt;
+	text-align: center;
+    margin-top: 20px;
+}
+
+.start2{
+	color: white;
+    font-size: 13pt;
+    font-weight: 300;
+    font-family: Lexend Deca;
+    display: block;
+    border: none;
+    padding: 7px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #13448d;
+    cursor: pointer;
+    width: 190px;
+    margin-left: 17px;
+    float: left;
+    border: 3px #13448d solid;
+    margin-top: 20px;
+}
+
+.start2:hover{
+	background-color: #053670;
+}
+
+.start2:active{
+	background-color: #05294c;
+}
+
+.processopt{
+	width: 25%;
+	margin-left: 6%;
+	margin-top: 18%;
+	cursor: pointer;
+}
+
+.processopt:hover{
+    filter: drop-shadow(3px 3px 5px rgba(0, 79, 49, 0.6));
+}
+
+.processopt:active{
+    opacity: 0.6;
+}
+
+.processvideo{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.processvideovid{
+	width: 100vw;
+	height: 100vh;
+}
+
+.backbuttonvid{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    z-index: 100;
+    left: 30px;
+    top: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+.backbuttonvid:hover{
+    opacity: 0.8;
+}
+
+.backbuttonvid:active{
+    opacity: 0.6;
+}
+
+#startbtn{
+    display: block;
+}
+
+.backbtnpopup{
+    height: 26%;
+    top: 27%;
+    left: 30%;
+    overflow: hidden;
+    display: none;
+}
+
+.backbtnpopup .start2{
+    width: 190px;
+    margin-left: 17px;
+    float: left;
+    border: 3px #13448d solid;
+    margin-top: 20px;
+}
+
+.exit{
+    background-color: white;
+    color: #13448d;
+}
+
+.start2:hover{
+    background-color: #053670;
+    border: 3px #053670 solid;
+}
+
+.start2:active{
+    background-color: #05294c;
+    border: 3px #05294c solid;
+}
+
+.exit:hover{
+    background-color: #e9f1fc;
+    border: 3px #053670 solid;
+}
+
+.exit:active{
+    background-color: #e9f1fc;
+    border: 3px #05294c solid;
+}
+
+#introprocesspopup{
+    display: block;
+}
+
+#introprocesspopup p{
+    font-size: 20px;
+    text-align: center;
+}
+
+#processintrodemo{
+    width: 80%;
+    height: 70%;
+    background-image: url('../images/processtut1.gif');
+    margin-top: 35px;
+    margin-left: 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.introdots{
+    width: 15px;
+    height: 15px;
+    background-color:#E7E7E7;
+    border-radius: 50%;
+    float: left;
+}
+
+#processdots1{
+    background-color: rgb(255, 199, 0);
+}
+
+#processdots2{
+    margin-left: 10px;
+}
+
+.processintrodots{
+    width: 40px;
+    height: 15px;
+    margin-left: 275px;
+    margin-top: 25px;
+}
+
+#processskip{
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    top: 387px;
+    left: 580px;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    color: #8FAFED;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#processprev2{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 40px;
+    top: 250px;
+    border: none;
+    background-color: transparent;
+    background-image: url('../images/icon/prevpopup.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: none;
+}
+
+#processnext1, #processnext2{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 600px;
+    top: 250px;
+    border: none;
+    background-color: transparent;
+    background-image: url('../images/icon/nextpopup.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#processnext2{
+    display: none;
+}
+
+#processcoverbg{
+    display: block;
+    z-index: 100000000;
+}
+
+#processskip:hover{
+    opacity: 0.7;
+}
+
+#processskip:hover{
+    opacity: 1;
+	font-weight: 300;
+}
+
+#processnext2:hover{
+    opacity: 0.8;
+}
+
+#processnext2:active{
+    opacity: 0.6;
+}
+
+#processnext1:hover{
+    opacity: 0.8;
+}
+
+#processnext1:active{
+    opacity: 0.6;
+}
+
+#processprev2:hover{
+    opacity: 0.8;
+}
+
+#processprev2:active{
+    opacity: 0.6;
+}

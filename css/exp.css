@@ -1,0 +1,147 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+#bodyexp{
+    background-color: #0C1E3A;
+	background-size: cover;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+}
+
+.intropopup{
+	position: fixed;
+    z-index: 1000000;
+    width: 30%;
+    height: 37%;
+    background-color: white;
+    padding: 4%;
+    border-radius: 30px;
+    display: none;
+	display: block;
+	left: 30%;
+	top: 25%;
+}
+
+.intropopup .heading{
+    font-family: 'Lexend Deca';
+    font-weight: 600;
+    color: #5785f6;
+    font-size: 40px;
+    text-align: center;
+}
+
+.intropopup p{
+	color: black;
+	font-size: 12pt;
+	font-weight: 300;
+	font-family: 'Raleway';
+	line-height: 18pt;
+	text-align: center;
+    margin-top: 20px;
+}
+
+.intropopupstart{
+    height: 25px;
+	color: white;
+    font-size: 13pt;
+    font-weight: 300;
+    font-family: Lexend Deca;
+    display: block;
+    border: none;
+    padding: 7px;
+    text-align: center;
+    border-radius: 30px;
+    width: 180px;
+    background-color: #13448d;
+    margin-top: 25px;
+    margin-left: 125px;
+    cursor: pointer;
+}
+
+.intropopupstart:hover{
+	height: 25px;
+	background-color: #053670;
+}
+
+.intropopupstart:active{
+	height: 25px;
+	background-color: #05294c;
+}
+
+a.chapteropt{
+	width: 379px;
+    display: block;
+    float: left;
+    margin-left: 68px;
+    margin-top: 75px;
+    height: 635px;
+    background-size: cover;
+}
+
+#opt1, #opt1id{
+	margin-left: 85px;
+ 	background-image: url("../images/title/options-02.png");
+}
+
+#opt2, #opt2id{
+	margin-left: 58px;
+	background-image: url("../images/title/options-01.png");
+}
+
+#opt3, #opt3id{
+	margin-left: 58px;
+	background-image: url("../images/title/options-03.png");
+}
+
+#opt1:hover{
+	background-image: url("../images/title/options-02hov.png");
+}
+
+#opt2:hover{
+	background-image: url("../images/title/options-01hov.png");
+}
+
+#opt3:hover{
+	background-image: url("../images/title/options-03hov.png");
+}
+
+#opt1id:hover{
+	background-image: url("../images/title/optionsid-02.png");
+}
+
+#opt2id:hover{
+	background-image: url("../images/title/optionsid-01.png");
+}
+
+#opt3id:hover{
+	background-image: url("../images/title/optionsid-03.png");
+}
+
+@media only screen and (max-width: 1000px) {
+	.intropopup .heading {
+		font-size: 37px;
+	}
+	.intropopupstart {
+		margin-top: 25px;
+	}
+	.intropopup {
+		width: 50%;
+		height: 53%;
+		left: 22%;
+		top: 18%;
+	}
+	#opt1, #opt1id {
+		margin-left: 110px;
+	}
+	a.chapteropt {
+		width: 184px;
+		height: 310px;
+	}
+}

@@ -1,0 +1,31 @@
+.guidepopup{
+    position: fixed;
+    left: 26%;
+    top: 15%;
+    background-color: white;
+    padding: 4%;
+    border-radius: 30px;
+    z-index: 1000000000000;
+    width: 40%;
+    height: 50%;
+}
+
+.guidepopupp{
+    margin-top: 10px;
+    color: black;
+    font-weight: 300;
+    font-family: 'Raleway';
+    line-height: 18pt;
+    font-size: 20px;
+    text-align: center;
+}
+
+.guidedemo{
+    width: 80%;
+    height: 70%;
+    background-image: url(images/processtut1.gif);
+    margin-top: 35px;
+    margin-left: 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

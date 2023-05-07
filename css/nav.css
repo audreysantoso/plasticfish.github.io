@@ -1,0 +1,144 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+nav{
+    z-index: 1000;
+    position: fixed;
+    top: 10px;
+}
+
+.help{
+	width: 40px;
+	height: 40px;
+	margin-top: 10px;
+	margin-left: 1370px;
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+}
+
+.help:hover{
+	opacity: 0.8;
+}
+
+.help:active{
+	opacity: 0.6;
+}
+
+.lang{
+	cursor: pointer;
+}
+
+#idlang{
+	margin-left: 1030px;
+}
+
+.lang:hover{
+	opacity: 0.8;
+}
+
+.lang:active{
+	opacity: 0.6;
+}
+
+.helpbutton{
+	width: inherit;
+	height: inherit;
+}
+
+.homebtn{
+	margin-top: 10px;
+	width: 40px;
+	height: auto;
+	float: left;
+	margin-left: 30px;
+	cursor: pointer;
+    display: inline-block;
+}
+
+.homebtn img{
+	width: inherit;
+	height: inherit;
+}
+
+.homebtn img:hover{
+	opacity: 0.8;
+}
+
+
+.homebtn img:active{
+	opacity: 0.6;
+}
+
+.wdwbtn{
+	margin-top: 10px;
+    width: 50px;
+    height: auto;
+	float: left;
+    margin-left: 30px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.wdwbtn img{
+    width: inherit;
+    height: inherit;
+}
+
+.wdwbtn img:hover{
+    opacity: 0.8;
+}
+
+
+.wdwbtn img:active{
+    opacity: 0.6;
+}
+
+.ecoton{
+	margin-top: 10px;
+	color: white;
+	font-size: 12pt;
+	font-weight: 300;
+	float: left;
+	padding-top: 10px;
+	font-family: Lexend Deca;
+	margin-left: 30px;
+}
+
+.ecoton:hover{
+	opacity: 0.7;
+}
+
+.ecoton:active{
+	opacity: 1;
+	font-weight: 400;
+}
+
+#langpopup{
+	position: fixed;
+    z-index: 10000000;
+    width: 300px;
+    left: 1022px;
+    top: 87px;
+    display: block;
+}
+
+.lang{
+	width: 80px;
+    height: 40px;
+    position: fixed;
+    margin-left: 1085px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.langbutton{
+	width: inherit;
+	height: inherit;
+}

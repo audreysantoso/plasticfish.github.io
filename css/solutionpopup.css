@@ -1,0 +1,138 @@
+.solution{
+	background: white;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    transform: rotate(-90deg);
+    border-radius: 20px 20px 0px 0px;
+    font-size: 15pt;
+    font-weight: 300;
+    font-family: Lexend Deca;
+    position: fixed;
+    width: 190px;
+    right: -74px;
+    bottom: 142px;
+    cursor: pointer;
+}
+
+.solutionid{
+    width: 210px;
+    right: -84px;
+}
+
+#solutionid{
+    width: 210px;
+}
+
+.solution:hover{
+	opacity: 0.8;
+}
+
+.solution:active{
+	opacity: 0.6;
+}
+
+#solpopup{
+	display: block;
+    height: 72%;
+	top: 8%;
+    position: fixed;
+    width: 40%;
+    left: 26%;
+    background-color: white;
+    padding: 4%;
+    border-radius: 30px;
+    display: none;
+    z-index: 1000000000000;
+}
+
+#solpopup a{
+	opacity: 0.7;
+}
+
+#solpopup a:hover{
+	opacity: 0.3;
+}
+
+#solpopup a:active{
+	opacity: 0.5;
+}
+
+#solpopup li{
+    margin-top: 10px;
+    color: black;
+    font-size: 12pt;
+    font-weight: 300;
+    font-family: 'Raleway';
+    line-height: 13pt;
+    color: #13448d;
+    text-align: left;
+}
+
+#solpopup p{
+    margin-top: 10px;
+    color: black;
+    font-size: 12pt;
+    font-weight: 300;
+    font-family: 'Raleway';
+    line-height: 18pt;
+    text-align: left;
+}
+
+#solpopup a{
+    margin-top: 10px;
+    color: black;
+    font-size: 12pt;
+    font-weight: 300;
+    font-family: 'Raleway';
+    line-height: 18pt;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.level1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 46px;
+    color: #5785f6;
+}
+
+.level2 {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    color: #5785f6;
+}
+
+#closesolution{
+    top: 7%;
+}
+
+@media only screen and (max-width: 1000px) {
+	#solpopup{
+		height: 62%;
+		top: 12%;
+		width: 60%;
+		left: 17%;
+		overflow-y: scroll;
+	}
+	#solpopup .level1 {
+		font-size: 22px;
+		line-height: 28px;
+	}
+	#solpopup .level2 {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	#solpopup ul{
+		margin-left: 20px;
+	}
+	#closesolution {
+		top: 9%;
+	}
+	img.close {
+        right: 14%;
+		top: 18%;
+		width: 4.5%;
+	}
+	
+}

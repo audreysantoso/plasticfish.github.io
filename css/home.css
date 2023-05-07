@@ -1,0 +1,316 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+#bodyindex{
+	background-image: url("../images/title/bg.png");
+	background-size: contain;
+	background-color: #062970;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+}
+
+.titlecontainer{
+	width: 74%;
+	height: 50%;
+	margin-left: 13%;
+	margin-top: 220px;
+}
+
+.title{
+	width: 100%;
+	height: auto;
+}
+
+#ititlecon, #ititleconid{
+	position: fixed;
+	width: 200px;
+	display: block;
+	border: none;
+	background-color: transparent;
+	top: 20%;
+    left: 56.5%;
+}
+
+
+#ititlecon:hover{
+	cursor: url("../images/icon/cursor.png"), auto;
+}
+
+#ititle{
+	width: inherit;
+	height: inherit;
+}
+
+.homepagestart{
+	color: white;
+	font-size: 15pt;
+	font-weight: 300;
+	font-family: Lexend Deca;
+	margin-left: 30px;
+	display: block;
+	border: white 2px solid;
+	padding: 7px;
+	text-align: center;
+	border-radius: 30px;
+	width: 180px;
+	background-color: transparent;
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#homepagestartid{
+	width: 200px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.homepagestart:hover{
+	opacity: 0.8;
+}
+
+.homepagestart:active{
+	background-color: rgba(255,255,255,0.1);
+}
+
+#myInput{
+	display: none;
+}
+
+.socmedcon{
+	position: fixed;
+    left: 2%;
+    top: 35%;
+}
+
+.twtbtn{
+	width: 40px;
+    height: 40px;
+    opacity: 0.8;
+    margin-top: 40px;
+    display: block;
+    background-image: url('../images/icon/icon-02.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.twtbtn:hover{
+	opacity: 0.5;
+}
+
+
+.twtbtn:active{
+	opacity: 1;
+}
+
+.cpybtn{
+	width: 30px;
+    height: 60px;
+    opacity: 0.8;
+    margin-top: 40px;
+    display: block;
+    background-image: url('../images/icon/icon-01.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.cpybtn:hover{
+	opacity: 0.5;
+}
+
+.cpybtn:active{
+	opacity: 1;
+}
+
+@media only screen and (max-width: 1200px) and (max-height: 1200px){
+	.titlecontainer {
+	    width: 74%;
+	    height: 50%;
+	    margin-left: 13%;
+	    margin-top: 14%;
+	}
+	#ititlecon{
+	    width: 38%;
+	    top: 21%;
+    	left: 56%;
+	}
+}
+
+@media only screen and (max-width: 1200px) and (max-height: 700px){
+	.titlecontainer {
+	    width: 74%;
+	    height: 50%;
+	    margin-left: 13%;
+	    margin-top: 10%;
+	}
+	#ititlecon{
+	    width: 38%;
+	    top: 15%;
+    	left: 56%;
+	}
+}
+
+@media only screen and (max-width: 1200px) and (max-height: 600px){
+	.titlecontainer {
+	    width: 74%;
+	    height: 50%;
+	    margin-left: 13%;
+	    margin-top: 6%;
+	}
+	#ititlecon{
+	    width: 38%;
+	    top: 11%;
+    	left: 56%;
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+  	.titlecontainer {
+	    margin-top: 8%;
+	}
+	#ititlecon {
+    	top: 16%;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+  	.socmedcon{
+  		top: 30%;
+  		left: 4%;
+  	}
+  	.ecoton{
+  		margin-left: 4%;
+  	}
+  	.start{
+		font-size: 13pt;
+		padding: 7px;
+		border-radius: 30px;
+		width: 160px;
+		bottom: 40px;
+		right: 40px;
+	}
+
+	.lang {
+	    width: 70px;
+	    height: 34px;
+	}
+
+	.help {
+    	width: 34px;
+	    height: 34px;
+	    margin-right: 20px;
+	}
+
+	.twtbtn {
+	    width: 35px;
+	    height: 35px;
+	}
+
+	.cpybtn {
+	    width: 25px;
+	    height: 55px;
+	}
+	.titlecontainer {
+		margin-top: 12%;
+	    width: 64%;
+	    margin-left: 18%;
+	}
+	#ititlecon {
+    	top: 14%;
+    	left: 55%;
+    	width: 36%;
+	}
+}
+
+@media only screen and (max-width: 700px) and (max-height: 400px){
+	.titlecontainer {
+	    margin-top: 5%;
+	}
+	#ititlecon {
+    	top: 15%;
+	}
+	.twtbtn {
+	    width: 30px;
+	    height: 30px;
+	}
+
+	.cpybtn {
+	    width: 20px;
+	    height: 50px;
+	}
+}
+
+@media only screen and (max-width: 700px) and (max-height: 300px){
+	.titlecontainer {
+	    width: 60%;
+    	margin-left: 20%;
+    	margin-top: 4%;
+	}
+	#ititlecon {
+    	top: 18%;
+    	width: 34%;
+	}
+
+	.socmedcon{
+		top: 25%;
+	}
+
+	.twtbtn {
+	    width: 30px;
+	    height: 30px;
+	}
+
+	.cpybtn {
+	    width: 20px;
+	    height: 50px;
+	}
+
+	.start {
+	    font-size: 12pt;
+	    padding: 6px;
+	    border-radius: 30px;
+	    width: 150px;
+	    bottom: 30px;
+	    right: 30px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

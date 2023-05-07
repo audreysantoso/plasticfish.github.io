@@ -1,0 +1,1164 @@
+@import url('fishanimated.css');
+
+body{
+    background-image: url('../images/source.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+#sourcecoverbg{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#introsourcepopup{
+    display: block;
+}
+
+.gamecontainer{
+    width: 86vw;
+    height: 80vh;
+    position: relative;
+    left: 5vw;
+    top: 5vh;
+}
+
+#timer{
+    font-size: 47px;
+    font-family: Lexend Deca;
+    font-weight: 500;
+    color: white;
+    position: fixed;
+    top: 45px;
+    left: 675px;
+    text-align: center;
+    width: 70px;
+}
+
+.soundoptions{
+    z-index: 10;
+    background-color: transparent;
+    width: 60px;
+    height: 40px;
+    border: none;
+    background-size: contain;
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    left: 30px;
+}
+
+.soundoptionsplay{
+    background-image: url('../images/icon/vol.png');
+    background-repeat: no-repeat;
+}
+
+.soundoptionspause{
+    background-image: url('../images/icon/mute.png');
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.fish{
+    left: -500px;
+    width: 15%;
+    position: absolute;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.playpause{
+    position: fixed;
+    bottom: 50px;
+    left: 120px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+#playpauseplay{
+    background-image: url('../images/icon/play.png');
+    display: none;
+}
+
+#playpausepause{
+    background-image: url('../images/icon/pause.png');
+}
+
+.lives{
+    height: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 120px;
+}
+
+.heart{
+    width: 50px;
+    height: 40px;
+    float: left;
+    margin-left: 10px;
+}
+
+#heart1, #heart2, #heart3{
+    display: block;
+}
+
+.end{
+    background-image: url('../images/title/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: -1vh;
+    left: 0vh;
+} 
+
+.hiddenEnd{
+    display: none;
+}
+
+.finmsg{
+    color: white;
+	font-size: 50pt;
+	font-weight: 600;
+	font-family: Lexend Deca;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.finmsgp{
+    color: white;
+	font-size: 20pt;
+	font-weight: 300;
+	font-family: Lexend Deca;
+    text-align: center;
+}
+
+.endcont{
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.fishdisplay{
+    width: 150px;
+    height: 70px;
+    margin-top: 40px;
+    float: left;
+    margin-left: 20px;
+    opacity: 0.2;
+}
+
+.fishimg{
+    width: 100%;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.fishtitle{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    color: white;
+	font-size: 12pt;
+    padding-top: 5px;
+	font-weight: 300;
+	font-family: Lexend Deca;
+    text-align: center;
+}
+
+.stopwatch{
+    width: 100px;
+    position: fixed;
+    top: 20px;
+    left: 660px;
+}
+
+#restartbtn{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    color: white;
+    font-size: 13pt;
+    font-weight: 300;
+    font-family: Lexend Deca;
+    display: block;
+    border: none;
+    padding: 7px;
+    text-align: center;
+    border-radius: 30px;
+    width: 160px;
+    background-color: #13448d;
+    margin-left: 143px;
+    cursor: pointer;
+}
+
+#restartbtn:hover{
+    background-color: #053670;
+    border: 3px #053670 solid;
+}
+
+#restartbtn:active{
+    background-color: #05294c;
+    border: 3px #05294c solid;
+}
+
+
+#pausepopup{
+    display: none;
+    height: 150px;
+    position: fixed;
+    left: 30%;
+    top: 25%;
+    background-color: white;
+    padding: 4%;
+    border-radius: 30px;
+    z-index: 1000000000000;
+    width: 30%;
+}
+
+.pausepopupheading{
+    font-family: 'Lexend Deca';
+    font-weight: 600;
+    color: #5785f6;
+    font-size: 40px;
+    text-align: center;
+}
+
+.pausepopbtn{
+    width: 70px;
+    height: 70px;
+    border: none;
+    background-color: transparent;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#resume, #restart{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+#resume{
+    background-image: url('../images/icon/resume.png');
+}
+
+#restart{
+    margin-left: 130px;
+    background-image: url('../images/icon/restart.png');
+}
+
+#cans_dispimg{
+    background-image: url('../images/secchapter/collect/left/cans.png');
+}
+
+#container_dispimg{
+    background-image: url('../images/secchapter/collect/left/container.png');
+}
+
+#bottle_dispimg{
+    background-image: url('../images/secchapter/collect/left/bottle.png');
+}
+
+#bangle_dispimg{
+    background-image: url('../images/secchapter/collect/left/bangle.png');
+}
+
+#cd_dispimg{
+    background-image: url('../images/secchapter/collect/right/cd.png');
+}
+
+#hanger_dispimg{
+    background-image: url('../images/secchapter/collect/right/hanger.png');
+}
+
+#toys_dispimg{
+    background-image: url('../images/secchapter/collect/right/toys.png');
+}
+
+#cutleries_dispimg{
+    background-image: url('../images/secchapter/collect/right/cutleries.png');
+}
+
+#paint_dispimg{
+    background-image: url('../images/secchapter/collect/right/paint.png');
+}
+
+#glass_dispimg{
+    background-image: url('../images/secchapter/collect/right/glass.png');
+}
+
+#mask_dispimg{
+    background-image: url('../images/secchapter/collect/left/mask.png');
+}
+
+#net_dispimg{
+    background-image: url('../images/secchapter/collect/left/net.png');
+}
+
+#gloves_dispimg{
+    background-image: url('../images/secchapter/collect/left/gloves.png');
+}
+
+#clothes_dispimg{
+    background-image: url('../images/secchapter/collect/left/clothes.png');
+}
+
+#toothbrush_dispimg{
+    background-image: url('../images/secchapter/collect/right/toothbrush.png');
+}
+
+#sponge_dispimg{
+    background-image: url('../images/secchapter/collect/left/sponge.png');
+}
+
+#yarn_dispimg{
+    background-image: url('../images/secchapter/collect/right/yarn.png');
+}
+
+#tire_dispimg{
+    background-image: url('../images/secchapter/collect/right/tire.png');
+}
+
+#bag_dispimg{
+    background-image: url('../images/secchapter/collect/left/bag.png');
+}
+
+#straw_dispimg{
+    background-image: url('../images/secchapter/collect/left/straw.png');
+}
+
+#sheets_dispimg{
+    background-image: url('../images/secchapter/collect/left/sheets.png');
+}
+
+#folders_dispimg{
+    background-image: url('../images/secchapter/collect/left/folders.png');
+}
+
+#tape_dispimg{
+    background-image: url('../images/secchapter/collect/right/tape.png');
+}
+
+#film_dispimg{
+    background-image: url('../images/secchapter/collect/right/film.png');
+}
+
+#snack_dispimg{
+    background-image: url('../images/secchapter/collect/right/snack.png');
+}
+
+#scrub_dispimg{
+    background-image: url('../images/secchapter/collect/left/scrub.png');
+}
+
+#toothpaste_dispimg{
+    background-image: url('../images/secchapter/collect/left/toothpaste.png');
+}
+
+#makeup_dispimg{
+    background-image: url('../images/secchapter/collect/right/makeup.png');
+}
+
+#nail_dispimg{
+    background-image: url('../images/secchapter/collect/right/nail.png');
+}
+
+#pellet_dispimg{
+    background-image: url('../images/secchapter/collect/right/pellets.png');
+}
+
+nav{
+    z-index: 1000;
+    position: fixed;
+}
+
+#bag{
+    animation-name: anim1;
+}
+
+#scrub{
+    animation-name: anim2;
+    animation-delay: 5s;
+}
+
+#gloves{
+    animation-name: anim3;
+    animation-delay: 2s;
+}
+
+#mask{
+    animation-name: anim4;
+    animation-delay: 14s;
+}
+
+#cans{
+    animation-name: anim5;
+    animation-delay: 10s;
+}
+
+#net{
+    animation-name: anim6;
+    animation-delay: 9s;
+}
+
+#straw{
+    animation-name: anim7;
+    animation-delay: 5s;
+}
+
+#bottle{
+    animation-name: anim8;
+    animation-delay: 10s;
+}
+
+#sponge{
+    animation-name: anim9;
+    animation-delay: 17s;
+}
+
+#bangle{
+    animation-name: anim3;
+    animation-delay: 12s;
+}
+
+#folders{
+    animation-name: anim6;
+    animation-delay: 13s;
+}
+
+#clothes{
+    animation-name: anim8;
+    animation-delay: 6s;
+}
+
+#container{
+    animation-name: anim5;
+    animation-delay: 8s;
+}
+
+#sheets{
+    animation-name: anim2;
+    animation-delay: 15s;
+}
+
+#pellets{
+    animation-name: anim10;
+}
+
+#yarn{
+    animation-name: anim11;
+    animation-delay: 7s;
+}
+
+#glass{
+    animation-name: anim16;
+    animation-delay: 8s;
+}
+
+#hanger{
+    animation-name: anim13;
+    animation-delay: 15s;
+}
+
+#cd{
+    animation-name: anim14;
+    animation-delay: 2s;
+}
+
+#snack{
+    animation-name: anim15;
+    animation-delay: 12s;
+}
+
+#nail{
+    animation-name: anim12;
+    animation-delay: 10s;
+}
+
+#film{
+    animation-name: anim16;
+    animation-delay: 4s;
+}
+
+#tire{
+    animation-name: anim17;
+    animation-delay: 1s;
+}
+
+#tape{
+    animation-name: anim14;
+    animation-delay: 8s;
+}
+
+#cutleries{
+    animation-name: anim14;
+    animation-delay: 5s;
+}
+
+#paint{
+    animation-name: anim13;
+    animation-delay: 13s;
+}
+
+#toys{
+    animation-name: anim13;
+    animation-delay: 11s;
+}
+
+#makeup{
+    animation-name: anim15;
+    animation-delay: 10s;
+}
+
+#en1{
+   animation-name: anim5; 
+   animation-delay: 1.5s;
+}
+
+#en2{
+    animation-name: anim12;
+    animation-delay: 3s;
+}
+
+#en3{
+    animation-name: anim14;
+    animation-delay: 4s;
+}
+
+#en4{
+    animation-name: anim13;
+    animation-delay: 2s;
+}
+
+#en5{
+    animation-name: anim8;
+    animation-delay: 1s;
+}
+
+#en6{
+    animation-name: anim3;
+    animation-delay: 4s;
+}
+
+#en7{
+    animation-name: anim6;
+    animation-delay: 3.5s;
+}
+
+#en8{
+    animation-name: anim14;
+    animation-delay: 10s;
+}
+
+#en9{
+    animation-name: anim16;
+    animation-delay: 6s;
+}
+
+#en10{
+    animation-name: anim12;
+    animation-delay: 9s;
+}
+
+#en11{
+    animation-name: anim2;
+    animation-delay: 2s;
+}
+
+#en12{
+    animation-name: anim5;
+    animation-delay: 4s;
+}
+
+#en13{
+    animation-delay: anim1;
+    animation-delay: 1.5s;
+}
+
+#en14{
+    animation-delay: anim4;
+    animation-delay: 4s;
+}
+
+#en15{
+    animation-name: anim2;
+    animation-delay: 2s;
+}
+
+#en16{
+    animation-name: anim9;
+    animation-delay: 1s;
+}
+
+#en17{
+    animation-name: anim7;
+    animation-delay: 1s;
+}
+
+#en18{
+    animation-name: anim15;
+    animation-delay: 1s;
+}
+
+#en19{
+    animation-name: anim13;
+    animation-delay: 0.5s;
+}
+
+#en20{
+    animation-name: anim14;
+    animation-delay: 7s;
+}
+
+#en21{
+    animation-name: anim12;
+    animation-delay: 6.5s;
+}
+
+#en22{
+    animation-name: anim13;
+    animation-delay: 8s;
+}
+
+#en23{
+    animation-name: anim11;
+    animation-delay: 8s;
+}
+
+#en24{
+    animation-name: anim16;
+    animation-delay: 7s;
+}
+
+#en25{
+    animation-name: anim13;
+    animation-delay: 5s;
+}
+
+#en26{
+    animation-name: anim10;
+    animation-delay: 4.5s;
+}
+
+#en27{
+    animation-name: anim16;
+    animation-delay: 5s;
+}
+
+#en28{
+    animation-name: anim15;
+    animation-delay: 6s;
+}
+
+#en29{
+    animation-name: anim17;
+    animation-delay: 6s;
+}
+
+#en30{
+    animation-name: anim1;
+    animation-delay: 6s;
+}
+
+#en31{
+    animation-name: anim4;
+    animation-delay: 5s;
+}
+
+#en32{
+    animation-name: anim6;
+    animation-delay: 5.5s;
+}
+
+#en33{
+    animation-name: anim4;
+    animation-delay: 8s;
+}
+
+#en34{
+    animation-name: anim5;
+    animation-delay: 7s;
+}
+
+#en35{
+    animation-name: anim7;
+    animation-delay: 10.5s;
+}
+
+#en36{
+    animation-name: anim8;
+    animation-delay: 9s;
+}
+
+#en37{
+    animation-name: anim1;
+    animation-delay: 7s;
+}
+
+#en38{
+    animation-name: anim2;
+    animation-delay: 6s;
+}
+
+#en39{
+    animation-name: anim12;
+    animation-delay: 5s;
+}
+
+#en40{
+    animation-name: anim5;
+    animation-delay: 3s;
+}
+
+#en41{
+    animation-name: anim15;
+    animation-delay: 2s;
+}
+
+#en42{
+    animation-name: anim15;
+    animation-delay: 3s;
+}
+
+#en43{
+    animation-name: anim16;
+    animation-delay: 3s;
+}
+
+#en44{
+    animation-name: anim17;
+    animation-delay: 9s;
+}
+
+#en45{
+    animation-name: anim16;
+    animation-delay: 5s;
+}
+
+#en46{
+    animation-name: anim15;
+    animation-delay: 4s;
+}
+
+#en47{
+    animation-name: anim3;
+    animation-delay: 5s;
+}
+
+#en48{
+    animation-name: anim4;
+    animation-delay: 7s;
+}
+
+#en49{
+    animation-name: anim8;
+    animation-delay: 7s;
+}
+
+#en50{
+    animation-name: anim18;
+    animation-delay: 2s;
+}
+
+#en51{
+    animation-name: anim13;
+    animation-delay: 12s;
+}
+
+#en52{
+    animation-name: anim2;
+    animation-delay: 8s;
+}
+
+#en53{
+    animation-name: anim1;
+    animation-delay: 9s;
+}
+
+#en54{
+    animation-name: anim5;
+    animation-delay: 13s;
+}
+
+#en55{
+    animation-name: anim7;
+    animation-delay: 8s;
+}
+
+#en56{
+    animation-name: anim8;
+    animation-delay: 12s;
+}
+
+#en57{
+    animation-name: anim7;
+    animation-delay: 14s;
+}
+
+#en58{
+    animation-name: anim5;
+    animation-delay: 9s;
+}
+
+#en59{
+    animation-name: anim7;
+    animation-delay: 12s;
+}
+
+#en60{
+    animation-name: anim8;
+    animation-delay: 14s;
+}
+
+#en61{
+    animation-name: anim3;
+    animation-delay: 15s;
+}
+
+#en62{
+    animation-name: anim6;
+    animation-delay: 12s;
+}
+
+#en63{
+    animation-name: anim7;
+    animation-delay: 9.5s;
+}
+
+#en64{
+    animation-name: anim5;
+    animation-delay: 15s;
+}
+
+#en65{
+    animation-name: anim4;
+    animation-delay: 12s;
+}
+
+#en66{
+    animation-name: anim8;
+    animation-delay: 4s;
+}
+
+#en67{
+    animation-name: anim6;
+    animation-delay: 8s;
+}
+
+#en68{
+    animation-name: anim7;
+    animation-delay: 14s;
+}
+
+#en69{
+    animation-name: anim8;
+    animation-delay: 16s;
+}
+
+#en70{
+    animation-name: anim1;
+    animation-delay: 14s;
+}
+
+#en71{
+    animation-name: anim6;
+    animation-delay: 16s;
+}
+
+#en72{
+    animation-name: anim8;
+    animation-delay: 15s;
+}
+
+#en73{
+    animation-name: anim16;
+    animation-delay: 8s;
+}
+
+#en74{
+    animation-name: anim13;
+    animation-delay: 14s;
+}
+
+#en75{
+    animation-name: anim12;
+    animation-delay: 9s;
+}
+
+#en76{
+    animation-name: anim13;
+    animation-delay: 14s;
+}
+
+#en77{
+    animation-name: anim17;
+    animation-delay:14s;
+}
+
+#en78{
+    animation-name: anim14;
+    animation-delay: 16s;
+}
+
+#en79{
+    animation-name: anim12;
+    animation-delay: 11s;
+}
+
+#en80{
+    animation-name: anim10;
+    animation-delay: 8s;
+}
+
+#en81{
+    animation-name: anim15;
+    animation-delay: 13s;
+}
+
+#en82{
+    animation-name: anim18;
+    animation-delay: 16.5s;
+}
+
+#en83{
+    animation-name: anim10;
+    animation-delay: 7s;
+}
+
+#en84{
+    animation-name: anim12;
+    animation-delay: 15s;
+}
+
+#en85{
+    animation-name: anim13;
+    animation-delay: 9s;
+}
+
+#en86{
+    animation-name: anim10;
+    animation-delay: 10s;
+}
+
+#en87{
+    animation-name: anim16;
+    animation-delay: 14s;
+}
+
+#en88{
+    animation-name: anim15;
+    animation-delay: 11s;
+}
+
+#en89{
+    animation-name: anim15;
+    animation-delay: 16s;
+}
+
+#en90{
+    animation-name: anim15;
+    animation-delay: 11s;
+}
+
+#en91{
+    animation-name: anim16;
+    animation-delay: 2.5s;
+}
+
+#en92{
+    animation-name: anim17;
+    animation-delay: 13.4s;
+}
+
+#en93{
+    animation-name: anim14;
+    animation-delay: 15s;
+}
+
+#en94{
+    animation-name: anim12;
+    animation-delay: 14.4s;
+}
+
+#en95{
+    animation-name: anim15;
+    animation-delay: 15s;
+}
+
+#en96{
+    animation-name: anim16;
+    animation-delay: 16s;
+}
+
+#en97{
+    animation-name: anim17;
+    animation-delay: 15s;
+}
+
+#en98{
+    animation-name: anim10;
+    animation-delay: 13.5s;
+}
+
+#en99{
+    animation-name: anim14;
+    animation-delay: 12s;
+}
+
+#en100{
+    animation-name: anim14;
+    animation-delay: 13s;
+}
+
+#introsourcepopup{
+    width: 40%;
+    height: 50%;
+}
+
+#introsourcepopup p{
+    font-size: 20px;
+    text-align: center;
+}
+
+#sourceintrodemo{
+    width: 80%;
+    height: 70%;
+    background-image: url('../images/sourcetut1.gif');
+    margin-top: 35px;
+    margin-left: 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.introdots{
+    width: 15px;
+    height: 15px;
+    background-color:#E7E7E7;
+    border-radius: 50%;
+    float: left;
+}
+
+#sourcedots2{
+    margin-left: 10px;
+}
+
+.sourceintrodots{
+    width: 40px;
+    height: 15px;
+    margin-left: 275px;
+    margin-top: 25px;
+}
+
+#sourceskip{
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    top: 387px;
+    left: 580px;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    color: #8FAFED;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#sourceprev2{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 40px;
+    top: 250px;
+    border: none;
+    background-color: transparent;
+    background-image: url('../images/icon/prevpopup.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#sourcenext1, #sourcenext2{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 600px;
+    top: 250px;
+    border: none;
+    background-color: transparent;
+    background-image: url('../images/icon/nextpopup.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#sourcenext2{
+    display: none;
+}
+
+#sourceprev2{
+    display: none;
+}
+
+#sourcedots1{
+    background-color: #FFC700;
+}
+
+#sourcedots2{
+    background-color: #E7E7E7;
+}
+
+
+#sourcenext1:hover{
+    opacity: 0.9;
+}
+
+#sourcenext1:active{
+    opacity: 0.8;
+}
+
+#sourcenext2:hover{
+    opacity: 0.9;
+}
+
+#sourcenext2:active{
+    opacity: 0.8;
+}
+
+#sourceprev2:hover{
+    opacity: 0.9;
+}
+
+#sourceprev2:active{
+    opacity: 0.8;
+}
+
+#sourceskip:hover{
+    opacity: 0.7;
+}
+
+#sourceskip:hover{
+    opacity: 1;
+	font-weight: 300;
+}
