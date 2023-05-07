@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Plastic Fish</title>
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/exp.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/solutionpopup.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    <body id="bodyexp">
+        <nav>
+            <a class="homebtn" href="indexid.html"><img src="images/icon/home.png"/></a>
+            <a class="ecoton" href="https://www.change.org/p/kementerianlhk-kemenpu-jokowi-free-brantas-river-from-microplastic-before-it-s-too-late-freebrantasfrommicroplastic-brantasbebasmikroplastik" target="_blank">Tanda Tangan Petisi Ecoton</a>
+    
+            <div class="help" onclick="openhelppopup('expcoverbg','exphelppopup','expclose')">
+                <img src="images/icon/icon-03.png" class="helpbutton"/>
+            </div>
+        </nav>
+        <div>
+            <a class="chapteropt" href="processid.html" id="opt1id">
+            </a>
+            <a class="chapteropt" href="sourceid.html" id="opt2id">
+            </a>
+            <a class="chapteropt" href="effectsid.html" id="opt3id">
+            </a>
+        
+            <button class="solution solutionid" id="solutionid" onclick="openPopSol('expcoverbg')">
+                Cara Mengatasi
+            </button>
+        </div>
+        <div class="coverbg" id="expcoverbg"></div>
+        <div class="helppopup" id="exphelppopup">
+            <p class="helppopuptext">
+                Seiring meningkatnya penggunaan plastik, semakin banyak sampah yang berada. Menurut Kementerian Lingkungan Hidup dan Kehutanan Indonesia (2021), terdapat 28,5 juta ton sampah per tahun dan 17% (4,85 juta ton) berasal dari plastik. Sampah plastik ini bisa terurai menjadi mikroplastik yang mencemari air tawar. Mikroplastik bisa berasal dari objek plastik besar atau kecil, seperti lulur tubuh atau deterjen pencuci baju.
+                <br><br>
+                Website ini dibuat untuk menyebarkan kesadaran publik mengenai mikroplastik, termasuk asalnya, proses dimakan ikan, dan efek kesehatan pada manusia. Kamu juga bisa ambil bagian menjadi solusi masalah ini dengan menandatangani petisi dari Organisasi Ecoton. Ecoton adalah organisasi lingkungan hidup Indonesia yang fokus terhadap konservasi sungai.
+                <br><br>
+                <span id="rafflesmark">Website ini adalah projek akhir untuk<br>
+                    <img src="images/raffles.jpeg"/>
+                </span>
+            </p>
+        </div>
+        <img src="images/icon/close.png" class="close" id="expclose" onclick="closehelppopup('expcoverbg','exphelppopup','expclose')">
+
+        <script src="js/helppopup.js"></script>
+
+        <div class="solpopup animate__fadeInDown" id="solpopup">
+            <p>
+                Cara Paling Efektif <br>
+                <span class="level1">Hentikan penggunaan plastik, terutama yang sekali pakai</span> <br><br>
+                Hal paling kecil yang bisa kamu lakukan <br>
+                <span class="level2">Sadari berapa banyak sampah plastik terproduksi dari kegiatan sehari-harimu</span> <br><br>
+    
+                Cara lain yang bisa kamu ambil
+                <ul>
+                    <li>Beli pakaian yang terbuat dari bahan organik</li>
+                    <li>Keringkan pakaian dari cucianmu dengan angin</li>
+                    <li>Cuci pakaianmu lebih jarang</li>
+                    <li>Beli kosmetik yang tidak berplastik</li>
+                    <li>Kurangi konsumsi kerang</li>
+                    <li>Gunakan transportasi umum atau alternatif</li>
+                    <li>Jangan microwave makananmu dalam plastik</li>
+                    <li>Mengvakum dan membersihkan debu secara teratur</li>
+                </ul> <br>
+                
+                <a href="https://www.perchenergy.com/blog/lifestyle/reduce-microplastic-pollution-consumption" target="_blank">(Perch Energy, 2022)</a>
+            </p>
+        </div>
+        <img src="images/icon/close.png" class="close" id="closesolution" onclick="closePopSol('expcoverbg')">
+        <script src="js/solution.js"></script>
+    </body>
+</html>

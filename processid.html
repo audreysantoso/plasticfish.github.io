@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Plastic Fish</title>
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/process.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/solutionpopup.css">
+        <link rel="stylesheet" href="css/guidepopup.css">
+        <link rel="stylesheet" href="css/audiobtn.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    <body id="bodyprocess">
+        <nav id="processnav">
+            <a class="homebtn" href="indexid.html"><img src="images/icon/home.png"/></a>
+            <a class="wdwbtn" href="expid.html"><img src="images/icon/window.png"/></a>
+            <a class="ecoton" href="https://www.change.org/p/kementerianlhk-kemenpu-jokowi-free-brantas-river-from-microplastic-before-it-s-too-late-freebrantasfrommicroplastic-brantasbebasmikroplastik" target="_blank">Tanda Tangan Petisi Ecoton</a>
+            <div class="help" onclick="openhelppopup('processcoverbg','processhelppopup','processclose')">
+                <img src="images/icon/icon-03.png" class="helpbutton"/>
+            </div>
+        </nav>
+        <div id="process">
+            <div class="guidepopup animate__fadeInDown" id="introprocesspopup">
+                <p class="guidepopupp" id="processpopupp">Pertama, pilih video yang mau kamu tonton</p>
+                <button id="processprev2" onclick="processprev2id()"></button>
+                <div id="processintrodemo" class="guidedemo"></div>
+                <button id="processnext1" onclick="processnext1id()"></button>
+                <button id="processnext2" onclick="closeProcessPop()"></button>
+                <div class="processintrodots">
+                    <div id="processdots1" class="introdots"></div>
+                    <div id="processdots2" class="introdots"></div>
+                </div>
+                <button id="processskip" onclick="closeProcessPop()">Lewati</button>
+            </div>
+    
+            <img src="images/process1id.png" class="processopt" onclick="playProcessVideo('consumption','accidental','confusion', 'backbuttonvidconsumption')"/>
+            <img src="images/process2id.png" class="processopt" onclick="playProcessVideo('confusion','accidental','consumption', 'backbuttonvidconfusion')"/>
+            <img src="images/process3id.png" class="processopt" onclick="playProcessVideo('accidental','confusion','consumption', 'backbuttonvidaccidental')"/>
+    
+            <div class="processvideo" id="processvideo">
+                <video autoplay controls id="consumption" class="processvideovid">
+                    <source src="images/consumptionid.mp4" type="video/mp4">
+                </video>
+                <video autoplay controls id="confusion" class="processvideovid">
+                    <source src="images/confusionid.mp4" type="video/mp4">
+                </video>
+                <video autoplay controls id="accidental" class="processvideovid">
+                    <source src="images/accidentalid.mp4" type="video/mp4">
+                </video>
+            </div>
+    
+            <img src="images/icon/back.png" class="backbuttonvid" id="backbuttonvidconsumption" onclick="showbackpopup('backbtnpopupconsumption', 'consumption');"/>
+            <img src="images/icon/back.png" class="backbuttonvid" id="backbuttonvidconfusion" onclick="showbackpopup('backbtnpopupconfusion', 'confusion');"/>
+            <img src="images/icon/back.png" class="backbuttonvid" id="backbuttonvidaccidental" onclick="showbackpopup('backbtnpopupaccidental', 'accidental');"/>
+    
+            <div class="intropopup animate__fadeInDown backbtnpopup" id="backbtnpopupconsumption">
+                <div class="heading">Masih ada beberapa detik lagi!</div>
+                <p>
+                    Kamu yakin mau pergi?
+                </p>
+                <button class="start2" onclick="hidebackpopup('backbtnpopupconsumption', 'consumption')">Lanjut nonton</button>
+                <button class="start2 exit" onclick="backbuttonvid('backbtnpopupconsumption', 'consumption', 'backbuttonvidconsumption')">Lihat video lain</button>
+            </div>
+        
+            <div class="intropopup animate__fadeInDown backbtnpopup" id="backbtnpopupconfusion">
+                <div class="heading">Masih ada beberapa detik lagi!</div>
+                <p>
+                    Kamu yakin mau pergi?
+                </p>
+                <button class="start2" onclick="hidebackpopup('backbtnpopupconfusion', 'confusion')">Lanjut nonton</button>
+                <button class="start2 exit" onclick="backbuttonvid('backbtnpopupconfusion', 'confusion', 'backbuttonvidconfusion')">Lihat video lain</button>
+            </div>
+        
+            <div class="intropopup animate__fadeInDown backbtnpopup" id="backbtnpopupaccidental">
+                <div class="heading">Masih ada beberapa detik lagi!</div>
+                <p>
+                    Kamu yakin mau pergi?
+                </p>
+                <button class="start2" onclick="hidebackpopup('backbtnpopupaccidental', 'accidental')">Lanjut nonton</button>
+                <button class="start2 exit" onclick="backbuttonvid('backbtnpopupaccidental', 'accidental', 'backbuttonvidaccidental')">Lihat video lain</button>
+            </div>
+            <button class="solution solutionid" id="solutionbtn" onclick="openPopSol('processcoverbg')">
+                Cara Mengatasi
+            </button>
+        </div>
+
+        <div class="coverbg" id="processcoverbg"></div>
+        <div class="helppopup" id="processhelppopup">
+            <p class="helppopuptext">
+                Seiring meningkatnya penggunaan plastik, semakin banyak sampah yang berada. Menurut Kementerian Lingkungan Hidup dan Kehutanan Indonesia (2021), terdapat 28,5 juta ton sampah per tahun dan 17% (4,85 juta ton) berasal dari plastik. Sampah plastik ini bisa terurai menjadi mikroplastik yang mencemari air tawar. Mikroplastik bisa berasal dari objek plastik besar atau kecil, seperti lulur tubuh atau deterjen pencuci baju.
+                <br><br>
+                Website ini dibuat untuk menyebarkan kesadaran publik mengenai mikroplastik, termasuk asalnya, proses dimakan ikan, dan efek kesehatan pada manusia. Kamu juga bisa ambil bagian menjadi solusi masalah ini dengan menandatangani petisi dari Organisasi Ecoton. Ecoton adalah organisasi lingkungan hidup Indonesia yang fokus terhadap konservasi sungai.
+                <br><br>
+                <span id="rafflesmark">Website ini adalah projek akhir untuk<br>
+                    <img src="images/raffles.jpeg"/>
+                </span>
+            </p>
+        </div>
+        <img src="images/icon/close.png" class="close" id="processclose" onclick="closehelppopup('processcoverbg','processhelppopup','processclose')">
+
+        <script src="js/helppopup.js"></script>
+
+        <div class="solpopup animate__fadeInDown" id="solpopup">
+            <p>
+                Cara Paling Efektif <br>
+                <span class="level1">Hentikan penggunaan plastik, terutama yang sekali pakai</span> <br><br>
+                Hal paling kecil yang bisa kamu lakukan <br>
+                <span class="level2">Sadari berapa banyak sampah plastik terproduksi dari kegiatan sehari-harimu</span> <br><br>
+    
+                Cara lain yang bisa kamu ambil
+                <ul>
+                    <li>Beli pakaian yang terbuat dari bahan organik</li>
+                    <li>Keringkan pakaian dari cucianmu dengan angin</li>
+                    <li>Cuci pakaianmu lebih jarang</li>
+                    <li>Beli kosmetik yang tidak berplastik</li>
+                    <li>Kurangi konsumsi kerang</li>
+                    <li>Gunakan transportasi umum atau alternatif</li>
+                    <li>Jangan microwave makananmu dalam plastik</li>
+                    <li>Mengvakum dan membersihkan debu secara teratur</li>
+                </ul> <br>
+                <a href="https://www.perchenergy.com/blog/lifestyle/reduce-microplastic-pollution-consumption" target="_blank">(Perch Energy, 2022)</a>
+            </p>
+        </div>
+        <img src="images/icon/close.png" class="close" id="closesolution" onclick="closePopSol('processcoverbg')">
+        <script src="js/solution.js"></script>
+        <script src="js/process.js"></script>
+        <script src="js/underwateraudio.js"></script>
+    </body>
+</html>

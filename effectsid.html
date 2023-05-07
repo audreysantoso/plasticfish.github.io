@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Plastic Fish</title>
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/effectsid.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/solutionpopup.css">
+        <link rel="stylesheet" href="css/guidepopup.css">
+        <link rel="stylesheet" href="css/audiobtn.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    <body id="bodyeffects">
+        <nav>
+            <a class="homebtn" href="indexid.html"><img src="images/icon/home.png"/></a>
+            <a class="wdwbtn" href="expid.html"><img src="images/icon/window.png"/></a>
+            <a class="ecoton" href="https://www.change.org/p/kementerianlhk-kemenpu-jokowi-free-brantas-river-from-microplastic-before-it-s-too-late-freebrantasfrommicroplastic-brantasbebasmikroplastik" target="_blank"> Tanda Tangan Petisi Ecoton </a>
+            <div class="help" onclick="openhelppopup('effectscoverbg','effectshelppopup','effectsclose')">
+                <img src="images/icon/icon-03.png" class="helpbutton"/>
+            </div>
+        </nav>
+        <div class="effects" id="effects">
+            <div class="guidepopup guidepopup animate__fadeInDown" id="introeffectspopup">
+                <p id="effectspopupp" class="guidepopupp">Klik ikan/piring yang mau kamu eksplor dan klik elemen yang sama untuk kembali</p>
+                <button id="effectsprev2" onclick="effectsprev2id()"></button>
+                <div id="effectsintrodemo" class="guidedemo"></div>
+                <button id="effectsnext1" onclick="effectsnext1id()"></button>
+                <button id="effectsnext2" onclick="closeEffectsPop();playaudioeffects('soundpicnic','soundpicnicpause','soundpicnicplay','sounddining','soundregular')"></button>
+                <div class="effectsintrodots">
+                    <div id="effectsdots1" class="introdots"></div>
+                    <div id="effectsdots2" class="introdots"></div>
+                </div>
+                <button id="effectsskip" onclick="closeEffectsPop();playaudioeffects('soundpicnic','soundpicnicpause','soundpicnicplay','sounddining','soundregular')">Lewati</button>
+            </div>
+            <div class="topganjelan"></div>
+            <div id="firstplate">
+                <div class="plate1" id="plate1"></div>
+                <img src="images/platesid/fragment.png" class="fishfragment fishopt1"/ id="fishfragment" onclick="opt('platefragment','fragmentchems')">
+                <div class="platefragment fishopt1big" id="platefragment" onclick="exit('platefragment','fragmentchems')"></div>
+        
+                <img src="images/platesid/foam.png" class="fishfoam fishopt1" id="fishfoam" onclick="opt('platefoam','foamchems')"/>
+                <div class="platefoam fishopt1big" id="platefoam" onclick="exit('platefoam','foamchems')"></div>
+        
+                <img src="images/platesid/microbeads.png" class="fishmicrobeads fishopt1" id="fishmicrobeads" onclick="opt('platemicrobeads','microbeadschems')"/>
+                <div class="platemicrobeads fishopt1big" id="platemicrobeads" onclick="exit('platemicrobeads','microbeadschems')"></div>
+        
+                <img src="images/platesid/filaments.png" class="fishfilaments fishopt1" id="fishfilaments" onclick="opt('platefilaments','filamentschems')"/>
+                <div class="platefilaments fishopt1big" id="platefilaments" onclick="exit('platefilaments','filamentschems')"></div>
+        
+                <img src="images/platesid/fibre.png" class="fishfibre fishopt1" id="fishfibre" onclick="opt('platefibre','fibrechems')"/>
+                <div class="platefibre fishopt1big" id="platefibre" onclick="exit('platefibre','fibrechems')"></div>
+        
+                <img src="images/platesid/film.png" class="fishfilm fishopt1" id="fishfilm" onclick="opt('platefilm','filmchems')"/>
+                <div class="platefilm fishopt1big" id="platefilm" onclick="exit('platefilm','filmchems')"></div>
+            </div>
+        
+        <!--FRAGMENT----FRAGMENT----FRAGMENT----FRAGMENT----FRAGMENT----FRAGMENT----FRAGMENT----FRAGMENT---->
+        
+            <div id="fragmentchems" class="animate__animated animate__bounceInLeft">
+                <div class="plates eachfragment" id="fragmentone" onclick="fragmentpet()">
+                    
+                </div>
+                <div class="plates eachfragment" id="fragmenttwo" onclick="fragmentldpe()">
+        
+                </div>
+                <div class="plates eachfragment" id="fragmentthree" onclick="fragmenthdpe()">
+        
+                </div>
+                <div class="plates eachfragment" id="fragmentfour" onclick="fragmentpvc()">
+        
+                </div>
+                <div class="plates eachfragment" id="fragmentfive" onclick="fragmentpp()">
+        
+                </div>
+                <div class="plates eachfragment" id="fragmentsix" onclick="fragmentpolystyrene()">
+        
+                </div>
+            </div>
+        
+            <div id="fragmentpet" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="fragmentonedum" onclick="exitfragmentpet()">
+        
+                </div>
+                <div class="nonplates" id="fragmentpetone">
+        
+                </div>
+                <div class="nonplates" id="fragmentpettwo">
+        
+                </div> 
+                <div class="nonplates" id="fragmentpetthree">
+        
+                </div>
+                <div class="nonplates" id="fragmentpetfour">
+        
+                </div>
+            </div>
+        
+            <div id="fragmentldpe" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="fragmenttwodum" onclick="exitfragmentldpe()">
+        
+                </div>
+                <div class="nonplates" id="fragmentldpeone">
+        
+                </div>
+            </div>
+        
+            <div id="fragmentpvc" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="fragmentthreedum" onclick="exitfragmentpvc()">
+        
+                </div>
+                <div class="nonplates" id="fragmentpvcone">
+        
+                </div>
+                <div class="nonplates" id="fragmentpvctwo">
+        
+                </div>
+                <div class="nonplates" id="fragmentpvcthree">
+        
+                </div>
+                <div class="nonplates" id="fragmentpvcfour">
+        
+                </div>
+                <div class="nonplates" id="fragmentpvcfive">
+        
+                </div>
+                <div class="nonplates" id="fragmentpvcsix">
+        
+                </div>
+                <div class="nonplates" id="fragmentpvcseven">
+        
+                </div>
+                <div class="nonplates" id="fragmentpvceight">
+        
+                </div>
+            </div>
+        
+            <div id="fragmenthdpe" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="fragmentfourdum" onclick="exitfragmenthdpe()">
+        
+                </div>
+                <div class="nonplates" id="fragmenthdpeone">
+        
+                </div>
+                <div class="nonplates" id="fragmenthdpetwo">
+        
+                </div> 
+                <div class="nonplates" id="fragmenthdpethree">
+        
+                </div>
+                <div class="nonplates" id="fragmenthdpefour">
+        
+                </div>
+                <div class="nonplates" id="fragmenthdpefive">
+        
+                </div>
+                <div class="nonplates" id="fragmenthdpesix">
+        
+                </div>
+            </div>
+        
+            <div id="fragmentpolystyrene" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="fragmentsixdum" onclick="exitfragmentpolystyrene()">
+        
+                </div>
+                <div class="nonplates" id="fragmentpolystyreneone">
+        
+                </div>
+            </div>
+        
+            <div id="fragmentpp" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="fragmentfivedum" onclick="exitfragmentpp()">
+        
+                </div>
+                <div class="nonplates" id="fragmentppone">
+        
+                </div>
+            </div>
+        
+        
+        <!--FOAM----FOAM----FOAM----FOAM----FOAM----FOAM----FOAM----FOAM----FOAM----FOAM----FOAM---->
+        
+        
+            <div id="foamchems" class="animate__animated animate__bounceInRight">
+                <div class="plates eachfoam" id="foamone" onclick="foampolystyrene()">
+                    
+                </div>
+                <div class="plates eachfoam" id="foamtwo" onclick="foamhdpeldpe()">
+        
+                </div>
+            </div>
+        
+            <div id="foampolystyrene" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="foamonedum" onclick="exitfoampolystyrene()">
+        
+                </div>
+                <div class="nonplates" id="foampolystyreneone">
+        
+                </div>
+            </div>
+        
+            <div id="foamhdpeldpe" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="foamtwodum" onclick="exitfoamhdpeldpe()">
+        
+                </div>
+                <div class="nonplates" id="foamhdpeldpeone">
+        
+                </div>
+                <div class="nonplates" id="foamhdpeldpetwo">
+        
+                </div> 
+                <div class="nonplates" id="foamhdpeldpethree">
+        
+                </div>
+                <div class="nonplates" id="foamhdpeldpefour">
+        
+                </div>
+                <div class="nonplates" id="foamhdpeldpefive">
+        
+                </div>
+                <div class="nonplates" id="foamhdpeldpesix">
+        
+                </div>
+                <div class="nonplates" id="foamhdpeldpeseven">
+        
+                </div>
+            </div>
+        
+        <!--MICROBEADS----MICROBEADS----MICROBEADS----MICROBEADS----MICROBEADS----MICROBEADS----MICROBEADS---->
+        
+            <div id="microbeadschems" class="animate__animated animate__bounceInUp">
+                <div class="plates eachmicrobeads" id="microbeadsone" onclick="microbeadsnylon()">
+                    
+                </div>
+                <div class="plates eachmicrobeads" id="microbeadstwo" onclick="microbeadshdpeldpe()">
+        
+                </div>
+                <div class="plates eachmicrobeads" id="microbeadsthree" onclick="microbeadspet()">
+        
+                </div>
+                <div class="plates eachmicrobeads" id="microbeadsfour" onclick="microbeadsphtalate()">
+        
+                </div>
+                <div class="plates eachmicrobeads" id="microbeadsfive" onclick="microbeadspp()">
+        
+                </div>
+                <div class="plates eachmicrobeads" id="microbeadssix" onclick="microbeadspolystyrene()">
+        
+                </div>
+            </div>
+        
+            <div id="microbeadspp" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="microbeadsfivedum" onclick="exitmicrobeadspp()">
+        
+                </div>
+                <div class="nonplates" id="microbeadsppone">
+        
+                </div>
+            </div>
+        
+            <div id="microbeadspolystyrene" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="microbeadssixdum" onclick="exitmicrobeadspolystyrene()">
+        
+                </div>
+                <div class="nonplates" id="microbeadspolystyreneone">
+        
+                </div>
+            </div>
+        
+            <div id="microbeadspet" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="microbeadsthreedum" onclick="exitmicrobeadspet()">
+        
+                </div>
+                <div class="nonplates" id="microbeadspetone">
+        
+                </div>
+                <div class="nonplates" id="microbeadspettwo">
+        
+                </div> 
+                <div class="nonplates" id="microbeadspetthree">
+        
+                </div>
+                <div class="nonplates" id="microbeadspetfour">
+        
+                </div>
+            </div>
+        
+            <div id="microbeadsphtalate" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="microbeadsfourdum" onclick="exitmicrobeadsphtalate()">
+        
+                </div>
+                <div class="nonplates" id="microbeadsphtalateone">
+        
+                </div>
+                <div class="nonplates" id="microbeadsphtalatetwo">
+        
+                </div> 
+                <div class="nonplates" id="microbeadsphtalatethree">
+        
+                </div>
+            </div>
+        
+            <div id="microbeadshdpeldpe" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="microbeadstwodum" onclick="exitmicrobeadshdpeldpe()">
+        
+                </div>
+                <div class="nonplates" id="microbeadshdpeldpeone">
+        
+                </div>
+                <div class="nonplates" id="microbeadshdpeldpetwo">
+        
+                </div> 
+                <div class="nonplates" id="microbeadshdpeldpethree">
+        
+                </div>
+                <div class="nonplates" id="microbeadshdpeldpefour">
+        
+                </div>
+                <div class="nonplates" id="microbeadshdpeldpefive">
+        
+                </div>
+                <div class="nonplates" id="microbeadshdpeldpesix">
+        
+                </div>
+                <div class="nonplates" id="microbeadshdpeldpeseven">
+        
+                </div>
+            </div>
+        
+            <div id="microbeadsnylon" class="research animate__animated animate__zoomIn">
+                The effects of consuming nylon is still<br> under research!
+            </div>
+        
+        
+        <!--FILAMENT----FILAMENT----FILAMENT----FILAMENT----FILAMENT----FILAMENT----FILAMENT---->
+        
+            <div id="filamentschems" class="animate__animated animate__bounceInDown">
+                <div class="plates eachfilaments" id="filamentsone" onclick="filamentspp()">
+                    
+                </div>
+                <div class="plates eachfilaments" id="filamentstwo" onclick="filamentsdyes()">
+        
+                </div>
+                <div class="plates eachfilaments" id="filamentsthree" onclick="filamentspet()">
+        
+                </div>
+            </div>
+        
+            <div id="filamentsdyes" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="filamentstwodum" onclick="exitfilamentsdyes()">
+        
+                </div>
+                <div class="nonplates" id="filamentsdyesone">
+        
+                </div>
+                <div class="nonplates" id="filamentsdyestwo">
+        
+                </div> 
+                <div class="nonplates" id="filamentsdyesthree">
+        
+                </div>
+            </div>
+        
+            <div id="filamentspet" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="filamentsonedum" onclick="exitfilamentspet()">
+        
+                </div>
+                <div class="nonplates" id="filamentspetone">
+        
+                </div>
+                <div class="nonplates" id="filamentspettwo">
+        
+                </div> 
+                <div class="nonplates" id="filamentspetthree">
+        
+                </div>
+                <div class="nonplates" id="filamentspetfour">
+        
+                </div>
+            </div>
+        
+            <div id="filamentspp" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="filamentsthreedum" onclick="exitfilamentspp()">
+        
+                </div>
+                <div class="nonplates" id="filamentsppone">
+        
+                </div>
+            </div>
+        
+        <!--FIBRE----FIBRE----FIBRE----FIBRE----FIBRE----FIBRE----FIBRE---->
+        
+            <div id="fibrechems" class="animate__animated animate__bounceInLeft">
+                <div class="plates eachfibre" id="fibreone" onclick="fibrephtalate()">
+                    
+                </div>
+                <div class="plates eachfibre" id="fibretwo" onclick="fibredyes()">
+        
+                </div>
+                <div class="plates eachfibre" id="fibrethree" onclick="fibremetals()">
+        
+                </div>
+                <div class="plates eachfibre" id="fibrefour" onclick="fibrepfc()">
+        
+                </div>
+                <div class="plates eachfibre" id="fibrefive" onclick="fibresolvent()">
+        
+                </div>
+            </div>
+        
+             <div id="fibredyes" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="fibretwodum" onclick="exitfibredyes()">
+        
+                </div>
+                <div class="nonplates" id="fibredyesone">
+        
+                </div>
+                <div class="nonplates" id="fibredyestwo">
+        
+                </div> 
+                <div class="nonplates" id="fibredyesthree">
+        
+                </div>
+            </div>
+        
+            <div id="fibrephtalate" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="fibreonedum" onclick="exitfibrephtalate()">
+        
+                </div>
+                <div class="nonplates" id="fibrephtalateone">
+        
+                </div>
+                <div class="nonplates" id="fibrephtalatetwo">
+        
+                </div> 
+                <div class="nonplates" id="fibrephtalatethree">
+        
+                </div>
+            </div>
+        
+            <div id="fibresolvent" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="fibrefivedum" onclick="exitfibresolvent()">
+        
+                </div>
+                <div class="nonplates" id="fibresolventone">
+        
+                </div> 
+                <div class="nonplates" id="fibresolventtwo">
+        
+                </div>
+            </div>
+        
+            <div id="fibremetals" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="fibrethreedum" onclick="exitfibremetals()">
+        
+                </div>
+                <div class="nonplates" id="fibremetalsone">
+        
+                </div>
+                <div class="nonplates" id="fibremetalstwo">
+        
+                </div> 
+                <div class="nonplates" id="fibremetalsthree">
+        
+                </div>
+            </div>
+        
+            <div id="fibrepfc" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="fibrefourdum" onclick="exitfibrepfc()">
+        
+                </div>
+                <div class="nonplates" id="fibrepfcone">
+        
+                </div>
+                <div class="nonplates" id="fibrepfctwo">
+        
+                </div> 
+                <div class="nonplates" id="fibrepfcthree">
+        
+                </div>
+                <div class="nonplates" id="fibrepfcfour">
+        
+                </div>
+            </div>
+        
+        <!--FILM----FILM----FILM----FILM----FILM----FILM----FILM---->
+        
+            <div id="filmchems" class="animate__animated animate__bounceInLeft">
+                <div class="plates eachfilm" id="filmone" onclick="filmphtalate()">
+                    
+                </div>
+                <div class="plates eachfilm" id="filmtwo" onclick="filmldpe()">
+        
+                </div>
+                <div class="plates eachfilm" id="filmthree" onclick="filmhdpe()">
+        
+                </div>
+                <div class="plates eachfilm" id="filmfour" onclick="filmpvc()">
+        
+                </div>
+            </div>
+        
+            <div id="filmphtalate" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="filmonedum" onclick="exitfilmphtalate()">
+        
+                </div>
+                <div class="nonplates" id="filmphtalateone">
+        
+                </div>
+                <div class="nonplates" id="filmphtalatetwo">
+        
+                </div> 
+                <div class="nonplates" id="filmphtalatethree">
+        
+                </div>
+            </div>
+        
+            <div id="filmhdpe" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="filmthreedum" onclick="exitfilmhdpe()">
+        
+                </div>
+                <div class="nonplates" id="filmhdpeone">
+        
+                </div>
+                <div class="nonplates" id="filmhdpetwo">
+        
+                </div> 
+                <div class="nonplates" id="filmhdpethree">
+        
+                </div>
+                <div class="nonplates" id="filmhdpefour">
+        
+                </div>
+                <div class="nonplates" id="filmhdpefive">
+        
+                </div>
+                <div class="nonplates" id="filmhdpesix">
+        
+                </div>
+            </div>
+        
+            <div id="filmpvc" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="filmfourdum" onclick="exitfilmpvc()">
+        
+                </div>
+                <div class="nonplates" id="filmpvcone">
+        
+                </div>
+                <div class="nonplates" id="filmpvctwo">
+        
+                </div>
+                <div class="nonplates" id="filmpvcthree">
+        
+                </div>
+                <div class="nonplates" id="filmpvcfour">
+        
+                </div>
+                <div class="nonplates" id="filmpvcfive">
+        
+                </div>
+                <div class="nonplates" id="filmpvcsix">
+        
+                </div>
+                <div class="nonplates" id="filmpvcseven">
+        
+                </div>
+                <div class="nonplates" id="filmpvceight">
+        
+                </div>
+            </div>
+        
+            <div id="filmldpe" class="animate__animated animate__bounceInDown">
+                <div class="plates" id="filmtwodum" onclick="exitfilmldpe()">
+        
+                </div>
+                <div class="nonplates" id="filmldpeone">
+        
+                </div>
+            </div>
+        
+            <div class="optcont">
+                <button class="tableopt" id="picnicbtn" onclick="picnic(); playaudioeffects('soundpicnic','soundpicnicpause','soundpicnicplay','sounddining','soundregular');hidebuttoneffects('soundpicnicpause','sounddiningplay','sounddiningpause','soundregularplay','soundregularpause','soundpicnicplay');">Piknik</button>
+                <button class="tableopt" id="finediningbtn" onclick="finedining(); playaudioeffects('sounddining','sounddiningpause','sounddiningplay','soundpicnic','soundregular');hidebuttoneffects('sounddiningpause','soundpicnicplay','soundpicnicpause','soundregularplay','soundregularpause','sounddiningplay');">Fine Dining</button>
+                <button class="tableopt" id="diningroombtn" onclick="diningroom();playaudioeffects('soundregular','soundregularpause','soundregularplay','sounddining','soundpicnic');hidebuttoneffects('soundregularpause','sounddiningplay','sounddiningpause','soundpicnicplay','soundpicnicpause','soundregularplay');">Ruang makan</button>
+            </div>
+        
+            <div class="audiocon">
+                <audio id="soundpicnic" loop>
+                    <source src="audio/picnic.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <audio id="soundregular" loop>
+                    <source src="audio/regular.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <audio id="sounddining" loop>
+                    <source src="audio/dining.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio> 
+        
+        
+                <!--sound picnic-->
+                <button class="soundoptions soundoptionspause" id="soundpicnicplay" onclick="playaudioeffects('soundpicnic','soundpicnicpause','soundpicnicplay','sounddining','soundregular')"></button>
+                <button class="soundoptions soundoptionsplay" id="soundpicnicpause" onclick="pauseaudioeffects('soundpicnic','soundpicnicplay','soundpicnicpause')"></button>
+        
+                <!--sound fine dining-->
+                <button class="soundoptions soundoptionspause" id="sounddiningplay" onclick="playaudioeffects('sounddining','sounddiningpause','sounddiningplay','soundpicnic','soundregular')"></button>
+                <button class="soundoptions soundoptionsplay" id="sounddiningpause" onclick="pauseaudioeffects('sounddining','sounddiningplay','sounddiningpause')"></button>
+        
+                <!--sound regular-->
+                <button class="soundoptions soundoptionspause" id="soundregularplay" onclick="playaudioeffects('soundregular','soundregularpause','soundregularplay','sounddining','soundpicnic')"></button>
+                <button class="soundoptions soundoptionsplay"  id="soundregularpause" onclick="pauseaudioeffects('soundregular','soundregularplay','soundregularpause')"></button>
+            </div>
+            <button class="solution solutionid" id="solutionbtn" onclick="openPopSol('effectscoverbg')">
+                Cara Mengatasi
+            </button>
+        </div>
+        
+        <script src="js/effects.js"></script>
+        <script src="js/fragment.js"></script>
+        <script src="js/foam.js"></script>
+        <script src="js/microbeads.js"></script>
+        <script src="js/filaments.js"></script>
+        <script src="js/fibre.js"></script>
+        <script src="js/film.js"></script>
+        <script src="js/finedining.js"></script>
+        <script src="js/picnic.js"></script>
+        <script src="js/diningroom.js"></script>
+        <script src="js/audio.js"></script>
+
+        <div class="coverbg" id="effectscoverbg"></div>
+        <div class="helppopup" id="effectshelppopup">
+            <p class="helppopuptext">
+                Seiring meningkatnya penggunaan plastik, semakin banyak sampah yang berada. Menurut Kementerian Lingkungan Hidup dan Kehutanan Indonesia (2021), terdapat 28,5 juta ton sampah per tahun dan 17% (4,85 juta ton) berasal dari plastik. Sampah plastik ini bisa terurai menjadi mikroplastik yang mencemari air tawar. Mikroplastik bisa berasal dari objek plastik besar atau kecil, seperti lulur tubuh atau deterjen pencuci baju.
+                <br><br>
+                Website ini dibuat untuk menyebarkan kesadaran publik mengenai mikroplastik, termasuk asalnya, proses dimakan ikan, dan efek kesehatan pada manusia. Kamu juga bisa ambil bagian menjadi solusi masalah ini dengan menandatangani petisi dari Organisasi Ecoton. Ecoton adalah organisasi lingkungan hidup Indonesia yang fokus terhadap konservasi sungai.
+                <br><br>
+                <span id="rafflesmark">Website ini adalah projek akhir untuk<br>
+                    <img src="images/raffles.jpeg"/>
+                </span>
+            </p>
+        </div>
+        <img src="images/icon/close.png" class="close" id="effectsclose" onclick="closehelppopup('effectscoverbg','effectshelppopup','effectsclose')">
+
+        <script src="js/helppopup.js"></script>
+
+        <div class="solpopup animate__fadeInDown" id="solpopup">
+            <p>
+                Cara Paling Efektif <br>
+                <span class="level1">Hentikan penggunaan plastik, terutama yang sekali pakai</span> <br><br>
+                Hal paling kecil yang bisa kamu lakukan <br>
+                <span class="level2">Sadari berapa banyak sampah plastik terproduksi dari kegiatan sehari-harimu</span> <br><br>
+    
+                Cara lain yang bisa kamu ambil
+                <ul>
+                    <li>Beli pakaian yang terbuat dari bahan organik</li>
+                    <li>Keringkan pakaian dari cucianmu dengan angin</li>
+                    <li>Cuci pakaianmu lebih jarang</li>
+                    <li>Beli kosmetik yang tidak berplastik</li>
+                    <li>Kurangi konsumsi kerang</li>
+                    <li>Gunakan transportasi umum atau alternatif</li>
+                    <li>Jangan microwave makananmu dalam plastik</li>
+                    <li>Mengvakum dan membersihkan debu secara teratur</li>
+                </ul> <br>
+                <a href="https://www.perchenergy.com/blog/lifestyle/reduce-microplastic-pollution-consumption" target="_blank">(Perch Energy, 2022)</a>
+            </p>
+        </div>
+        <img src="images/icon/close.png" class="close" id="closesolution" onclick="closePopSol('effectscoverbg')">
+        <script src="js/solution.js"></script>
+    </body>
+</html>

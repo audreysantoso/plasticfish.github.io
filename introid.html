@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Plastic Fish</title>
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/intro.css">
+        <link rel="stylesheet" href="css/exp.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/solutionpopup.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    <body id="bodyintro">
+        <nav>
+            <a class="homebtn" href="indexid.html"><img src="images/icon/home.png"/></a>
+            <a class="ecoton" href="https://www.change.org/p/kementerianlhk-kemenpu-jokowi-free-brantas-river-from-microplastic-before-it-s-too-late-freebrantasfrommicroplastic-brantasbebasmikroplastik" target="_blank">Tanda Tangan Petisi Ecoton</a>
+    
+            <div class="help" onclick="openhelppopup('introcoverbg','introhelppopup','introclose')">
+                <img src="images/icon/icon-03.png" class="helpbutton"/>
+            </div>
+        </nav>
+        <div id="intro">
+            <p id="introtexts">Mikroplastik adalah partikel plastik kecil yang berasal dari degradasi objek plastik yang lebih besar atau plastik kecil speerti scrub badan dan deterjen.</p>
+
+            <button id="skip" onclick ="nextthreeid()"> Lewati Pengenalan </button>
+            <button id="next1" onclick="nextoneid()" class="arrowcon"> 
+                <img src="images/icon/right.png" class="arrows"/>
+            </button>
+            <button id="next2" onclick="nexttwoid()" class="arrowcon"> 
+                <img src="images/icon/right.png" class="arrows"/>
+            </button>
+            <button id="prev2" onclick="prevtwoid()" class="arrowcon">
+                <img src="images/icon/left.png" class="arrows"/>
+            </button>
+            <button id="next3" onclick ="nextthreeid()" class="arrowcon">
+                <img src="images/icon/right.png" class="arrows"/>
+            </button>
+            <button id="prev3" onclick="prevthreeid()" class="arrowcon">
+                <img src="images/icon/left.png" class="arrows"/>
+            </button>
+        </div>
+
+        <div class="exp" id="exp">        
+            <a class="chapteropt" id="opt1">
+            </a>
+            <a class="chapteropt" id="opt2">
+            </a>
+            <a class="chapteropt" id="opt3">
+            </a>
+        
+            <button class="solution" id="solutionid">
+                Cara Mengatasi
+            </button>
+        </div>
+
+        <div class="coverbg" id="introcoverbg"></div>
+        <div class="helppopup" id="introhelppopup">
+            <p class="helppopuptext">
+                Seiring meningkatnya penggunaan plastik, semakin banyak sampah yang berada. Menurut Kementerian Lingkungan Hidup dan Kehutanan Indonesia (2021), terdapat 28,5 juta ton sampah per tahun dan 17% (4,85 juta ton) berasal dari plastik. Sampah plastik ini bisa terurai menjadi mikroplastik yang mencemari air tawar. Mikroplastik bisa berasal dari objek plastik besar atau kecil, seperti lulur tubuh atau deterjen pencuci baju.
+                <br><br>
+                Website ini dibuat untuk menyebarkan kesadaran publik mengenai mikroplastik, termasuk asalnya, proses dimakan ikan, dan efek kesehatan pada manusia. Kamu juga bisa ambil bagian menjadi solusi masalah ini dengan menandatangani petisi dari Organisasi Ecoton. Ecoton adalah organisasi lingkungan hidup Indonesia yang fokus terhadap konservasi sungai.
+                <br><br>
+                <span id="rafflesmark">Website ini adalah projek akhir untuk<br>
+                    <img src="images/raffles.jpeg"/>
+                </span>
+            </p>
+        </div>
+        <div class="intropopup animate__fadeInDown" id="experienceintropopup">
+            <div class="heading">Yuk cari tahu lebih lanjut tentang polusi mikroplastik!</div>
+            <p>
+                Pilih salah satu dari opsi yang tersedia untuk mulai mengeksplor.
+            </p>
+            <a class="intropopupstart" href="expid.html">Aku mengerti!</a>
+        </div>
+        <img src="images/icon/close.png" class="close" id="introclose" onclick="closehelppopup('introcoverbg','introhelppopup','introclose')">
+
+        <script src="js/helppopup.js"></script>
+        <script src="js/solution.js"></script>
+        <script src="js/intro.js"></script>
+    </body>
+</html>

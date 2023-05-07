@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Plastic Fish</title>
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/source.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/solutionpopup.css">
+        <link rel="stylesheet" href="css/guidepopup.css">
+        <link rel="stylesheet" href="css/audiobtn.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    <body>
+        <nav>
+            <a class="homebtn" href="index.html"><img src="images/icon/home.png"/></a>
+            <a class="wdwbtn" href="exp.html"><img src="images/icon/window.png"/></a>
+            <a class="ecoton" href="https://www.change.org/p/kementerianlhk-kemenpu-jokowi-free-brantas-river-from-microplastic-before-it-s-too-late-freebrantasfrommicroplastic-brantasbebasmikroplastik" target="_blank">Sign Ecoton Petition </a>
+            <div class="help" onclick="openhelppopup('sourcecoverbg','sourcehelppopup','sourceclose');pause();">
+                <img src="images/icon/icon-03.png" class="helpbutton"/>
+            </div>
+        </nav>
+        <script src="js/localstorage.js"></script>
+        <div class="source" id="source">
+            <div class="guidepopup guidepopup animate__fadeInDown" id="introsourcepopup">
+                <p id="sourcepopupp" class="guidepopupp">Click as many fish containing source of microplastic as possible to collect them</p>
+                <button id="sourceprev2" onclick="sourceprev2()"></button>
+                <div id="sourceintrodemo" class="guidedemo"></div>
+                <button id="sourcenext1" onclick="sourcenext1()"></button>
+                <button id="sourcenext2" onclick="closeSourcePop();startgame();playaudio()"></button>
+                <div class="sourceintrodots">
+                    <div id="sourcedots1" class="introdots"></div>
+                    <div id="sourcedots2" class="introdots"></div>
+                </div>
+                <button id="sourceskip" onclick="closeSourcePop();startgame();playaudio()">Skip</button>
+            </div>
+            <div class="animate__fadeInDown" id="pausepopup">
+                <div class="pausepopupheading">
+                    Game Pause
+                </div>
+                <button class="pausepopbtn" id="restart" onclick="location.reload()"/></button>
+                <button class="pausepopbtn" id="resume" onclick="play();closePausePop()"/></button>
+            </div>
+            <div class="gamecontainer">
+                <img src="images/secchapter/collect/left/bag.png" id="bag" class="fish collect" onclick="addtoms('bag'); playpopsound(); hidebag()"/>
+                <img src="images/secchapter/collect/left/scrub.png" id="scrub" class="fish collect" onclick="addtoms('scrub'); playpopsound(); hidescrub()"/>
+                <img src="images/secchapter/collect/left/gloves.png" id="gloves" class="fish collect" onclick="addtoms('gloves'); playpopsound(); hidegloves()"/>
+                <img src="images/secchapter/enemies/left/grey.png" id="en1" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/grey.png" id="en2" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/collect/left/mask.png" id="mask" class="fish collect" onclick="addtoms('mask'); playpopsound(); hidemask()"/>
+                <img src="images/secchapter/collect/left/cans.png" id="cans" class="fish collect" onclick="addtoms('cans'); playpopsound(); hidecans()"/>
+                <img src="images/secchapter/enemies/right/orange.png" id="en3" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/gold.png" id="en4" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/yellow.png" id="en5" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/brown.png" id="en6" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/ocre.png" id="en7" class="fish enemies" onclick="addtoms('en')" />
+                <img src="images/secchapter/collect/left/toothpaste.png" id="toothpaste" class="fish collect" onclick="addtoms('toothpaste'); playpopsound(); hidetoothpaste()"/>
+                <img src="images/secchapter/collect/left/net.png" id="net" class="fish collect" onclick="addtoms('net'); playpopsound(); hidenet()"/>
+                <img src="images/secchapter/collect/left/straw.png" id="straw" class="fish collect" onclick="addtoms('straw'); playpopsound(); hidestraw()"/>
+                <img src="images/secchapter/enemies/right/ocre.png" id="en8" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/brown.png" id="en9" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/gold.png" id="en10" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/gold.png" id="en11" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/orange.png" id="en12" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/orange.png" id="en13" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/yellow.png" id="en14" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/yellow.png" id="en15" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/ocre.png" id="en16" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/brown.png" id="en17" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/collect/left/bottle.png" id="bottle" class="fish collect" onclick="addtoms('bottle'); playpopsound(); hidebottle()"/>
+                <img src="images/secchapter/enemies/right/orange.png" id="en18" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/yellow.png" id="en19" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/orange.png" id="en20" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/gold.png" id="en21" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/brown.png" id="en22" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/yellow.png" id="en23" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/orange.png" id="en24" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/gold.png" id="en25" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/brown.png" id="en26" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/yellow.png" id="en27" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/gold.png" id="en28" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/orange.png" id="en29" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/orange.png" id="en30" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/yellow.png" id="en31" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/brown.png" id="en32" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/collect/left/sponge.png" id="sponge" class="fish collect" onclick="addtoms('sponge'); playpopsound(); hidesponge()"/>
+                <img src="images/secchapter/collect/left/bangle.png" id="bangle" class="fish collect" onclick="addtoms('bangle'); playpopsound(); hidebangle()"/>
+                <img src="images/secchapter/enemies/left/yellow.png" id="en33" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/orange.png" id="en34" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/gold.png" id="en35" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/brown.png" id="en36" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/brown.png" id="en37" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/ocre.png" id="en38" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/orange.png" id="en39" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/yellow.png" id="en40" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/gold.png" id="en41" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/ocre.png" id="en42" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/orange.png" id="en43" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/grey.png" id="en44" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/yellow.png" id="en45" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/collect/left/folders.png" id="folders" class="fish collect" onclick="addtoms('folders'); playpopsound(); hidefolders()"/>
+                <img src="images/secchapter/enemies/right/orange.png" id="en46" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/orange.png" id="en47" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/brown.png" id="en48" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/ocre.png" id="en49" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/yellow.png" id="en50" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/yellow.png" id="en51" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/gold.png" id="en52" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/brown.png" id="en53" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/orange.png" id="en54" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/grey.png" id="en55" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/ocre.png" id="en56" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/yellow.png" id="en57" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/orange.png" id="en58" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/gold.png" id="en59" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/grey.png" id="en60" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/brown.png" id="en61" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/orange.png" id="en62" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/orange.png" id="en63" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/gold.png" id="en64" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/ocre.png" id="en65" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/ocre.png" id="en66" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/collect/left/clothes.png" id="clothes" class="fish collect" onclick="addtoms('clothes'); playpopsound(); hideclothes()"/>
+                <img src="images/secchapter/collect/left/container.png" id="container" class="fish collect" onclick="addtoms('container'); playpopsound(); hidecontainer()"/>
+                <img src="images/secchapter/collect/left/sheets.png" id="sheets" class="fish collect" onclick="addtoms('sheets'); playpopsound(); hidesheets()"/>
+                <img src="images/secchapter/enemies/left/orange.png" id="en67" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/gold.png" id="en68" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/ocre.png" id="en69" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/yellow.png" id="en70" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/yellow.png" id="en71" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/left/orange.png" id="en72" class="fish enemies" onclick="addtoms('en')"/>
+    
+    
+                <img src="images/secchapter/collect/right/pellets.png" id="pellets" class="fish collect" onclick="addtoms('pellets'); playpopsound(); hidepellets()"/>
+                <img src="images/secchapter/collect/right/yarn.png" id="yarn" class="fish collect" onclick="addtoms('yarn'); playpopsound(); hideyarn()"/>
+                <img src="images/secchapter/enemies/right/orange.png" id="en73" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/yellow.png" id="en74" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/yellow.png" id="en75" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/grey.png" id="en76" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/gold.png" id="en77" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/gold.png" id="en78" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/orange.png" id="en79" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/brown.png" id="en80" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/gold.png" id="en81" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/gold.png" id="en82" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/orange.png" id="en83" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/orange.png" id="en84" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/yellow.png" id="en85" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/yellow.png" id="en86" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/grey.png" id="en87" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/brown.png" id="en88" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/ocre.png" id="en89" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/ocre.png" id="en90" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/ocre.png" id="en91" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/yellow.png" id="en92" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/yellow.png" id="en93" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/orange.png" id="en94" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/orange.png" id="en95" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/ocre.png" id="en96" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/ocre.png" id="en97" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/brown.png" id="en98" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/gold.png" id="en99" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/enemies/right/orange.png" id="en100" class="fish enemies" onclick="addtoms('en')"/>
+                <img src="images/secchapter/collect/right/glass.png" id="glass" class="fish collect" onclick="addtoms('glass'); playpopsound(); hideglass()"/>
+                <img src="images/secchapter/collect/right/hanger.png" id="hanger" class="fish collect" onclick="addtoms('hanger'); playpopsound(); hidehanger()"/>
+                <img src="images/secchapter/collect/right/cd.png" id="cd" class="fish collect" onclick="addtoms('cd'); playpopsound(); hidecd()"/>
+                <img src="images/secchapter/collect/right/snack.png" id="snack" class="fish collect" onclick="addtoms('snack'); playpopsound(); hidesnack()"/>
+                <img src="images/secchapter/collect/right/nail.png" id="nail" class="fish collect" onclick="addtoms('nail'); playpopsound(); hidenail()"/>
+                <img src="images/secchapter/collect/right/film.png" id="film" class="fish collect" onclick="addtoms('film'); playpopsound(); hidefilm()"/>
+                <img src="images/secchapter/collect/right/tire.png" id="tire" class="fish collect" onclick="addtoms('tire'); playpopsound(); hidetire()"/>
+                <img src="images/secchapter/collect/right/tape.png" id="tape" class="fish collect" onclick="addtoms('tape'); playpopsound(); hidetape()"/>
+                <img src="images/secchapter/collect/right/cutleries.png" id="cutleries" class="fish collect" onclick="addtoms('cutleries'); playpopsound(); hidecutleries()"/>
+                <img src="images/secchapter/collect/right/paint.png" id="paint" class="fish collect" onclick="addtoms('paint'); playpopsound(); hidepaint()"/>
+                <img src="images/secchapter/collect/right/toothbrush.png" id="toothbrush" class="fish collect" onclick="addtoms('toothbrush'); playpopsound(); hidetoothbrush()"/>
+                <img src="images/secchapter/collect/right/toys.png" id="toys" class="fish collect" onclick="addtoms('toys'); playpopsound(); hidetoys()"/>
+                <img src="images/secchapter/collect/right/makeup.png" id="makeup" class="fish collect" onclick="addtoms('makeup'); playpopsound(); hidemakeup()"/>
+            </div>
+            <img src="images/stopwatch.png" class="stopwatch"/>
+            <p id="timer">20</p>
+            <button onclick="pause();openPausePop()" class="playpause" id="playpausepause"></button>
+            <button onclick="play()" class="playpause" id="playpauseplay"></button>
+    
+            <audio id="popsound" loop>
+                <source src="audio/pop.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="end hiddenEnd" id="end">
+                <h1 class="finmsg">GAME OVER!</h1>
+                <p class="finmsgp">Here are the fish you've collected</p>
+                <div class="endcont">
+                    <div class="fishdisplay" id="cans_disp">
+                        <div class="fishimg" id="cans_dispimg">
+                        </div>
+                        <div class="fishtitle" id="cans_disptitle">
+                            Cans
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="container_disp">
+                        <div class="fishimg" id="container_dispimg">
+                        </div>
+                        <div class="fishtitle" id="container_disptitle">
+                            Containers
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="bottle_disp">
+                        <div class="fishimg" id="bottle_dispimg">
+                        </div>
+                        <div class="fishtitle" id="bottle_disptitle">
+                            Plastic bottles
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="bangle_disp">
+                        <div class="fishimg" id="bangle_dispimg">
+                        </div>
+                        <div class="fishtitle" id="bangle_disptitle">
+                            Plastic pieces
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="cd_disp">
+                        <div class="fishimg" id="cd_dispimg">
+                        </div>
+                        <div class="fishtitle" id="cd_disptitle">
+                            Electronics
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="hanger_disp">
+                        <div class="fishimg" id="hanger_dispimg">
+                        </div>
+                        <div class="fishtitle" id="hanger_disptitle">
+                            Hanger
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="toys_disp">
+                        <div class="fishimg" id="toys_dispimg">
+                        </div>
+                        <div class="fishtitle" id="toys_disptitle">
+                            Toys
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="cutleries_disp">
+                        <div class="fishimg" id="cutleries_dispimg">
+                        </div>
+                        <div class="fishtitle" id="cutleries_disptitle">
+                            Plastic cutleries
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="paint_disp">
+                        <div class="fishimg" id="paint_dispimg">
+                        </div>
+                        <div class="fishtitle" id="paint_disptitle">
+                            Paint
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="glass_disp">
+                        <div class="fishimg" id="glass_dispimg">
+                        </div>
+                        <div class="fishtitle" id="glass_disptitle">
+                            Glass
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="mask_disp">
+                        <div class="fishimg" id="mask_dispimg">
+                        </div>
+                        <div class="fishtitle" id="mask_disptitle">
+                            Mask
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="net_disp">
+                        <div class="fishimg" id="net_dispimg">
+                        </div>
+                        <div class="fishtitle" id="net_disptitle">
+                            Net
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="gloves_disp">
+                        <div class="fishimg" id="gloves_dispimg">
+                        </div>
+                        <div class="fishtitle" id="gloves_disptitle">
+                            Gloves
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="clothes_disp">
+                        <div class="fishimg" id="clothes_dispimg">
+                        </div>
+                        <div class="fishtitle" id="clothes_disptitle">
+                            Clothes
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="sponge_disp">
+                        <div class="fishimg" id="sponge_dispimg">
+                        </div>
+                        <div class="fishtitle" id="sponge_disptitle">
+                           Sponge
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="toothbrush_disp">
+                        <div class="fishimg" id="toothbrush_dispimg">
+                        </div>
+                        <div class="fishtitle" id="toothbrush_disptitle">
+                           Toothbrush
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="yarn_disp">
+                        <div class="fishimg" id="yarn_dispimg">
+                        </div>
+                        <div class="fishtitle" id="yarn_disptitle">
+                           Yarn
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="tire_disp">
+                        <div class="fishimg" id="tire_dispimg">
+                        </div>
+                        <div class="fishtitle" id="tire_disptitle">
+                            Tyres
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="bag_disp">
+                        <div class="fishimg" id="bag_dispimg">
+                        </div>
+                        <div class="fishtitle" id="bag_disptitle">
+                            Plastic bags
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="straw_disp">
+                        <div class="fishimg" id="straw_dispimg">
+                        </div>
+                        <div class="fishtitle" id="straw_disptitle">
+                           Straws
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="sheets_disp">
+                        <div class="fishimg" id="sheets_dispimg">
+                        </div>
+                        <div class="fishtitle" id="sheets_disptitle">
+                            Plastic Sheets
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="folders_disp">
+                        <div class="fishimg" id="folders_dispimg">
+                        </div>
+                        <div class="fishtitle" id="folders_disptitle">
+                            Stationery
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="tape_disp">
+                        <div class="fishimg" id="tape_dispimg">
+                        </div>
+                        <div class="fishtitle" id="tape_disptitle">
+                            Tape
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="film_disp">
+                        <div class="fishimg" id="film_dispimg">
+                        </div>
+                        <div class="fishtitle" id="film_disptitle">
+                            Film Rolls
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="snack_disp">
+                        <div class="fishimg" id="snack_dispimg">
+                        </div>
+                        <div class="fishtitle" id="snack_disptitle">
+                           Plastic packaging
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="scrub_disp">
+                        <div class="fishimg" id="scrub_dispimg">
+                        </div>
+                        <div class="fishtitle" id="scrub_disptitle">
+                            Scrubs
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="toothpaste_disp">
+                        <div class="fishimg" id="toothpaste_dispimg">
+                        </div>
+                        <div class="fishtitle" id="toothpaste_disptitle">
+                            Toothpaste
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="makeup_disp">
+                        <div class="fishimg" id="makeup_dispimg">
+                        </div>
+                        <div class="fishtitle" id="makeup_disptitle">
+                            Cosmetic
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="nail_disp">
+                        <div class="fishimg" id="nail_dispimg">
+                        </div>
+                        <div class="fishtitle" id="nail_disptitle">
+                            Nail polish
+                        </div>
+                    </div>
+                    <div class="fishdisplay" id="pellet_disp">
+                        <div class="fishimg" id="pellet_dispimg">
+                        </div>
+                        <div class="fishtitle" id="pellet_disptitle">
+                            Plastic pellet
+                        </div>
+                    </div>
+                </div>
+                <button class="start2" id="restartbtn" onclick="location.reload()">Replay</button>
+            </div>
+        </div>
+        <audio id="underwatersound" loop>
+            <source src="audio/underwater.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <button class="soundoptions soundoptionspausetp" id="soundpause" onclick="playaudio();enablepopsound()"></button>
+        <button class="soundoptions soundoptionsplaytp" id="soundplay" onclick="pauseaudio();mutepopsound()"></button>
+        <div class="coverbg" id="sourcecoverbg"></div>
+        <div class="helppopup" id="sourcehelppopup">
+            <p class="helppopuptext">
+                As the use  of plastic increase, so does the waste. According to the Ministry of Environment and Forestry of The Republic of Indonesia (2021), Indonesia produces 28,5 million tons of trash annually, and 17% of them (4,85 million tons) come from plastics. Parts of these trash can turn into microplastic that polluts the freshwater. Microplastics can come from decays of larger plastic objects or small plastic bits such as from body scrubs and laundry detergent. 
+                <br><br>
+                This website intends to spread awareness about microplastic, including its sources, source of being eaten by the fish, and the health effects on human. You can also make an impact on this issue by donating or signing petition of the Ecoton Organization. Ecoton is an Indonesian-based environment organization that focuses on river conservation. 
+                <br><br>
+                <span id="rafflesmark">This website is built as a final project for <br>
+                    <img src="images/raffles.jpeg"/>
+                </span>
+            </p>
+        </div>
+        <img src="images/icon/close.png" class="close" id="sourceclose" onclick="closehelppopup('sourcecoverbg','sourcehelppopup','sourceclose');play();">
+
+        <script src="js/helppopup.js"></script>
+        <script src="js/source.js"></script>
+        <script src="js/timerandbtn.js"></script>
+        <script src="js/fishcollection.js"></script>
+        <script src="js/underwateraudio.js"></script>
+    </body>
+    </html>
