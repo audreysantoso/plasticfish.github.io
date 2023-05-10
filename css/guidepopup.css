@@ -29,3 +29,102 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+@media only screen and (max-width: 1000px) {
+    .guidepopup{
+        left: 17%;
+        top: 10%;
+        width: 60%;
+        height: 60%;
+    }
+    #introprocesspopup p {
+        font-size: 16px;
+    }
+    .processintrodots {
+        margin-left: 247px;
+        margin-top: 10px;
+    }
+    #processskip{
+        top: 224px;
+        left: 480px;
+    }
+    #processintrodemo {
+        width: 50%;
+        height: 70%;
+        margin-top: 15px;
+        margin-left: 25%;
+    }
+    #introeffectspopup{
+        left: 17%;
+        top: 10%;
+        width: 60%;
+        height: 60%;
+    }
+    #introeffectspopup p {
+        font-size: 16px;
+    }
+    #processprev2 {
+        left: 64px;
+        top: 141px
+    }
+    #processnext1, #processnext2 {
+        left: 501px;
+        top: 141px;
+    }
+    .effectsintrodots {
+        margin-left: 247px;
+        margin-top: 10px;
+    }
+    #effectsskip{
+        top: 224px;
+        left: 480px;
+    }
+    #effectsintrodemo {
+        width: 50%;
+        height: 70%;
+        margin-top: 15px;
+        margin-left: 25%;
+    }
+    #effectsprev2 {
+        left: 64px;
+        top: 141px
+    }
+    #effectsnext1, #effectsnext2 {
+        left: 501px;
+        top: 141px;
+    }
+    #introsourcepopup p {
+        font-size: 16px;
+    }
+    .sourceintrodots {
+        margin-left: 247px;
+        margin-top: 10px;
+    }
+    #sourceskip{
+        top: 224px;
+        left: 480px;
+    }
+    #sourceintrodemo {
+        width: 50%;
+        height: 70%;
+        margin-top: 15px;
+        margin-left: 25%;
+    }
+    #introeffectspopup{
+        left: 17%;
+        top: 10%;
+        width: 60%;
+        height: 60%;
+    }
+    #introeffectspopup p {
+        font-size: 16px;
+    }
+    #sourceprev2 {
+        left: 64px;
+        top: 141px
+    }
+    #sourcenext1, #sourcenext2 {
+        left: 501px;
+        top: 141px;
+    }
+}

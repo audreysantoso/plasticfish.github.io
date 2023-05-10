@@ -15,6 +15,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
     <body id="bodyindex">
+        <div class="intropopup animate__fadeInDown" id="experienceintropopup">
+            <div class="heading">Please rotate your device to landscape</div>
+            <p>
+                This site is best to be accessed in landscape mode. Refresh the site after you rotated your device.
+            </p>
+            <!-- <a class="intropopupstart" href="exp.html">Okay, understand!</a> -->
+        </div>
         <nav>
             <a class="ecoton" href="https://www.change.org/p/kementerianlhk-kemenpu-jokowi-free-brantas-river-from-microplastic-before-it-s-too-late-freebrantasfrommicroplastic-brantasbebasmikroplastik" target="_blank">Sign Ecoton Petition </a>
             <a class="lang" href="indexid.html">
@@ -54,4 +61,21 @@
 
         <script src="js/helppopup.js"></script>
     </body>
+    <script>
+        window.onload = function(){
+            var screen = document.getElementById("bodyindex");
+            var screenwidth = window.getComputedStyle(screen).width;
+            var screenheight = window.getComputedStyle(screen).height;
+            // alert(screenwidth+screenheight);
+
+            if (parseFloat(screenwidth) > parseFloat(screenheight)) {
+                document.getElementById("experienceintropopup").style.display="none";
+                document.getElementById("experienceintropopup").style.left="-100vw";
+            
+            } else{
+                document.getElementById("experienceintropopup").style.display="block";
+                document.getElementById("experienceintropopup").style.left="0";
+            }
+        };
+    </script>
 </html>

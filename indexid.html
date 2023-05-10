@@ -15,6 +15,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
     <body id="bodyindex">
+        <div class="intropopup animate__fadeInDown" id="experienceintropopup">
+            <div class="heading">Putar perangkatmu jadi mode landscape</div>
+            <p>
+                Situs ini dapat diakses terbaik dalam mode landscape. Bila telah kamu putar, refresh sitenya.
+            </p>
+            <!-- <a class="intropopupstart" href="exp.html">Okay, understand!</a> -->
+        </div>
         <nav>
             <a class="ecoton" href="https://www.change.org/p/kementerianlhk-kemenpu-jokowi-free-brantas-river-from-microplastic-before-it-s-too-late-freebrantasfrommicroplastic-brantasbebasmikroplastik" target="_blank"> Tanda Tangan Petisi Ecoton </a>
             <a class="lang" id ="idlang" href="index.html">
@@ -53,5 +60,22 @@
         <img src="images/icon/close.png" class="close" id="homeclose" onclick="closehelppopup('homecoverbg','homehelppopup','homeclose')">
 
         <script src="js/helppopup.js"></script>
+        <script>
+            window.onload = function(){
+                var screen = document.getElementById("bodyindex");
+                var screenwidth = window.getComputedStyle(screen).width;
+                var screenheight = window.getComputedStyle(screen).height;
+                // alert(screenwidth+screenheight);
+    
+                if (parseFloat(screenwidth) > parseFloat(screenheight)) {
+                    document.getElementById("experienceintropopup").style.display="none";
+                    document.getElementById("experienceintropopup").style.left="-100vw";
+                
+                } else{
+                    document.getElementById("experienceintropopup").style.display="block";
+                    document.getElementById("experienceintropopup").style.left="0";
+                }
+            };
+        </script>
     </body>
 </html>

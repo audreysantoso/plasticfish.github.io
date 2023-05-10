@@ -142,3 +142,46 @@ nav{
 	width: inherit;
 	height: inherit;
 }
+
+@media only screen and (max-width: 1000px) {
+	.lang {
+		width: 80px;
+		height: 40px;
+		position: fixed;
+		margin-left: 541px;
+		margin-top: 10px;
+		display: inline-block;
+	}
+	#idlang{
+		margin-left: 484px;
+	}
+	.help {
+		width: 40px;
+		height: 40px;
+		margin-top: 10px;
+		margin-left: 817px;
+		cursor: pointer;
+		border: none;
+		background-color: transparent;
+	}
+	#closesolution {
+		top: 9%;
+	}
+	img.close {
+        right: 14%;
+		top: 9%;
+		width: 4.5%;
+	}
+	img.closehelp{
+		right: 14%;
+		top: 9%;
+		width: 4.5%;
+	}
+	.helppopup{
+		height: 62%;
+		top: 12%;
+		width: 60%;
+		left: 17%;
+		overflow-y: scroll;
+	}
+}

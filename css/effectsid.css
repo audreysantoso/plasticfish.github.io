@@ -1898,3 +1898,915 @@ a{
     width: 100vw;
     height: 50px;
 }
+
+@media only screen and (max-width: 1000px) {
+    #bodyeffects{
+        background-size: cover;
+    }
+    #plate1{
+        width: 390px;
+        height: 250px;
+        left: 253px;
+        top: 97px;
+    }
+    .optcont {
+        bottom: 27px;
+    }
+    .soundoptions {
+        bottom: 27px;
+    }
+    .fishfragment {
+        left: 543px;
+        top: 102px;
+        width: 89px;
+    }
+    .fishfoam {
+        left: 498px;
+        top: 115px;
+        width: 89px;
+    }
+    .fishmicrobeads {
+        left: 451px;
+        top: 109px;
+        width: 79px;
+    }
+    .fishfilaments {
+        left: 381px;
+        top: 107px;
+        width: 90px;
+    }
+    .fishfibre {
+        left: 330px;
+        top: 118px;
+        width: 96px;
+    }
+    .fishfilm {
+        left: 276px;
+        top: 118px;
+        width: 82px;
+    }
+    .fishopt1big {
+        width: 215px;
+        height: 138px;
+        left: 335px;
+        top: 128px;
+    }
+    #picnicbtn{
+        margin-left: 30px;
+        background-color: #13448d;
+        border: #13448d solid 3px;
+        color: white;
+        top: -231px;
+        position: absolute;
+    }
+    #finediningbtn{
+        top: -169px;
+        position: absolute;
+        width: 129px;
+    }
+    #diningroombtn{
+        position: absolute;
+        top: -108px;
+        width: 150px;
+    }
+    #filmone {
+        width: 104px;
+        height: 104px;
+        left: 604px;
+        top: 102px;
+    }
+    #filmtwo {
+        width: 143px;
+        height: 104px;
+        left: 373px;
+        top: -38px;
+    }
+    #filmthree {
+        width: 134px;
+        height: 103px;
+        left: 372px;
+        top: 236px;
+    }
+    #filmfour {
+        width: 104px;
+        height: 104px;
+        left: 189px;
+        top: 102px;
+    }
+    #filmtwodum {
+        width: 173px;
+        height: 125px;
+        top: 107px;
+        left: 356px;
+    }
+    #filmldpeone {
+        width: 126px;
+        height: 119px;
+        top: -24px;
+        left: 372px;
+    }
+    #filmonedum {
+        width: 136px;
+        height: 136px;
+        top: 106px;
+        left: 374px;
+    }
+    #filmphtalateone {
+        background-image: url(../images/plates/phtalate1/phtalate1.png);
+        background-size: cover;
+        width: 126px;
+        height: 126px;
+        top: 179px;
+        left: 229px;
+    }
+    #filmphtalatetwo {
+        background-image: url(../images/plates/phtalate1/phtalate2.png);
+        background-size: cover;
+        width: 126px;
+        height: 126px;
+        left: 538px;
+        top: 179px;
+    }
+    #filmphtalatethree {
+        background-image: url(../images/plates/phtalate1/phtalate3.png);
+        background-size: cover;
+        width: 126px;
+        height: 126px;
+        top: -24px;
+        left: 378px;
+    }
+    #filmthreedum {
+        width: 167px;
+        height: 129px;
+        top: 92px;
+        left: 359px;
+    }
+    #filmhdpeone {
+        width: 126px;
+        height: 126px;
+        top: 31px;
+        left: 547px;
+    }
+    #filmhdpetwo {
+        width: 126px;
+        height: 126px;
+        top: -36px;
+        left: 377px;
+    }
+    #filmhdpethree {
+        width: 126px;
+        height: 126px;
+        top: 165px;
+        left: 549px;
+    }
+    #filmhdpefour {
+        width: 126px;
+        height: 126px;
+        top: 226px;
+        left: 375px;
+    }
+    #filmhdpefive {
+        width: 126px;
+        height: 126px;
+        top: 165px;
+        left: 207px;
+    }
+    #filmhdpesix {
+        width: 126px;
+        height: 126px;
+        top: 31px;
+        left: 207px;
+    }
+    #filmfourdum {
+        width: 136px;
+        height: 136px;
+        top: 99px;
+        left: 374px;
+    }
+    #filmpvcone {
+        width: 126px;
+        height: 126px;
+        top: 152px;
+        left: 552px;
+    }
+    #filmpvctwo {
+        width: 126px;
+        height: 126px;
+        top: 41px;
+        left: 552px;
+    }
+    #filmpvcthree {
+        width: 126px;
+        height: 126px;
+        top: 236px;
+        left: 442px;
+    }
+    #filmpvcfour {
+        width: 126px;
+        height: 126px;
+        top: 236px;
+        left: 323px;
+    }
+    #filmpvcfive {
+        width: 126px;
+        height: 126px;
+        top: 152px;
+        left: 213px;
+    }
+    #filmpvcsix {
+        width: 126px;
+        height: 126px;
+        top: 41px;
+        left: 213px;
+    }
+    #filmpvcseven {
+        width: 126px;
+        height: 126px;
+        top: -25px;
+        left: 323px;
+    }
+    #filmpvceight {
+        width: 126px;
+        height: 126px;
+        top: -25px;
+        left: 442px;
+    }
+    #fibreone {
+        width: 104px;
+        height: 104px;
+        left: 606px;
+        top: 92px;
+    }
+    #fibretwo {
+        width: 146px;
+        height: 104px;
+        left: 354px;
+        top: -38px;
+    }
+    #fibrethree {
+        width: 134px;
+        height: 103px;
+        left: 297px;
+        top: 229px;
+    }
+    #fibrefour {
+        width: 104px;
+        height: 104px;
+        left: 184px;
+        top: 92px;
+    }
+    #fibrefive {
+        width: 143px;
+        height: 104px;
+        left: 487px;
+        top: 229px;
+    }
+    #fibretwodum {
+        width: 175px;
+        height: 125px;
+        top: 91px;
+        left: 340px;
+    }
+    #fibredyesone {
+        width: 126px;
+        height: 126px;
+        top: 183px;
+        left: 191px;
+    }
+    #fibredyestwo {
+        width: 126px;
+        height: 126px;
+        left: 539px;
+        top: 183px;
+    }
+    #fibredyesthree {
+        width: 126px;
+        height: 126px;
+        top: -30px;
+        left: 374px;
+    }
+    #fibrefourdum {
+        width: 136px;
+        height: 136px;
+        top: 101px;
+        left: 374px;
+    }
+    #fibrepfcone {
+        width: 126px;
+        height: 126px;
+        top: 112px;
+        left: 230px;
+    }
+    #fibrepfctwo {
+        width: 126px;
+        height: 126px;
+        top: 112px;
+        left: 518px;
+    }
+    #fibrepfcthree {
+        width: 126px;
+        height: 126px;
+        top: 236px;
+        left: 380px;
+    }
+    #fibrepfcfour {
+        width: 126px;
+        height: 126px;
+        top: -26px;
+        left: 380px;
+    }
+    #fibrethreedum {
+        width: 167px;
+        height: 129px;
+        top: 111px;
+        left: 356px;
+    }  
+    #fibremetalsone {
+        width: 126px;
+        height: 126px;
+        top: 184px;
+        left: 249px;
+    }
+    
+    #fibremetalstwo {
+        width: 126px;
+        height: 126px;
+        left: 517px;
+        top: 184px;
+    }
+    #fibremetalsthree {
+        width: 126px;
+        height: 126px;
+        top: -17px;
+        left: 378px;
+    }
+    #fibrefivedum {
+        width: 173px;
+        height: 125px;
+        top: 93px;
+        left: 369px;
+    }
+    #fibresolventone {
+        width: 126px;
+        height: 126px;
+        top: 92px;
+        left: 218px;
+    }
+    #fibresolventtwo {
+        width: 126px;
+        height: 126px;
+        top: 92px;
+        left: 558px;
+    }
+    #fibreonedum {
+        width: 136px;
+        height: 136px;
+        top: 92px;
+        left: 373px;
+    }
+    #fibrephtalateone {
+        width: 126px;
+        height: 126px;
+        top: 188px;
+        left: 262px;
+    }
+    #fibrephtalatetwo {
+        width: 126px;
+        height: 126px;
+        left: 498px;
+        top: 188px;
+    }
+    #fibrephtalatethree {
+        width: 126px;
+        height: 126px;
+        top: -39px;
+        left: 378px;
+    }
+    #filamentsone {
+        width: 104px;
+        height: 104px;
+        left: 541px;
+        top: 185px;
+    }
+    #filamentstwo {
+        width: 146px;
+        height: 104px;
+        left: 354px;
+        top: -35px;
+    }
+    #filamentsthree {
+        width: 134px;
+        height: 103px;
+        left: 208px;
+        top: 185px;
+    }
+    #filamentstwodum {
+        width: 146px;
+        height: 104px;
+        top: 109px;
+        left: 351px;
+    }
+    #filamentsdyesone {
+        width: 126px;
+        height: 126px;
+        top: 201px;
+        left: 259px;
+    }
+    #filamentsdyestwo {
+        width: 126px;
+        height: 126px;
+        left: 492px;
+        top: 201px;
+    }
+    #filamentsdyesthree {
+        width: 126px;
+        height: 126px;
+        top: -19px;
+        left: 375px;
+    }
+    #filamentsonedum {
+        width: 134px;
+        height: 103px;
+        top: 96px;
+        left: 375px;
+    }
+    #filamentsonedum {
+        width: 167px;
+        height: 129px;
+        top: 90px;
+        left: 357px;
+    }
+    #filamentspetone {
+        width: 126px;
+        height: 126px;
+        top: 85px;
+        left: 217px;
+    }
+    #filamentspettwo {
+        width: 126px;
+        height: 126px;
+        top: 85px;
+        left: 548px;
+    }
+    #filamentspetthree {
+        width: 126px;
+        height: 126px;
+        top: 227px;
+        left: 378px;
+    }
+    #filamentspetfour {
+        width: 126px;
+        height: 126px;
+        top: -47px;
+        left: 378px;
+    }
+    #filamentsthreedum {
+        width: 136px;
+        height: 136px;
+        top: 92px;
+        left: 375px;
+    }
+    #filamentsppone {
+        width: 126px;
+        height: 126px;
+        top: -33px;
+        left: 378px;
+    }
+    #microbeadsone {
+        width: 134px;
+        height: 103px;
+        left: 562px;
+        top: 47px;
+    }
+    #microbeadstwo {
+        width: 143px;
+        height: 104px;
+        left: 381px;
+        top: -33px;
+    }
+    #microbeadsthree {
+        width: 134px;
+        height: 103px;
+        left: 209px;
+        top: 189px;
+    }
+    #microbeadsfour {
+        width: 104px;
+        height: 104px;
+        left: 213px;
+        top: 47px;
+    }
+    #microbeadsfive {
+        width: 104px;
+        height: 104px;
+        left: 389px;
+        top: 239px;
+    }
+    #microbeadssix {
+        width: 104px;
+        height: 104px;
+        left: 578px;
+        top: 189px;
+    }
+    #microbeadstwodum {
+        width: 173px;
+        height: 125px;
+        top: 99px;
+        left: 375px;
+    }
+    #microbeadshdpeldpeone {
+        width: 126px;
+        height: 126px;
+        top: -32px;
+        left: 378px;
+    }
+    #microbeadshdpeldpetwo {
+        width: 126px;
+        height: 126px;
+        top: 28px;
+        left: 535px;
+    }
+    #microbeadshdpeldpethree {
+        width: 126px;
+        height: 126px;
+        top: 28px;
+        left: 235px;
+    }
+    #microbeadshdpeldpefour {
+        width: 126px;
+        height: 126px;
+        top: 142px;
+        left: 202px;
+    }
+    #microbeadshdpeldpefive {
+        width: 126px;
+        height: 126px;
+        top: 225px;
+        left: 310px;
+    }
+    #microbeadshdpeldpesix {
+        width: 126px;
+        height: 126px;
+        top: 142px;
+        left: 568px;
+    }
+    #microbeadshdpeldpeseven {
+        width: 126px;
+        height: 126px;
+        top: 225px;
+        left: 447px;
+    }
+    #microbeadssixdum {
+        width: 136px;
+        height: 136px;
+        top: 88px;
+        left: 375px;
+    }
+    #microbeadspolystyreneone {
+        width: 126px;
+        height: 126px;
+        top: -32px;
+        left: 379px;
+    }
+    #microbeadsfivedum {
+        width: 136px;
+        height: 136px;
+        top: 88px;
+        left: 375px;
+    }
+    #microbeadsppone {
+        width: 126px;
+        height: 126px;
+        top: -32px;
+        left: 379px;
+    }
+    #microbeadsthreedum {
+        width: 167px;
+        height: 129px;
+        top: 82px;
+        left: 357px;
+    }
+    #microbeadspetone {
+        width: 126px;
+        height: 126px;
+        top: 88px;
+        left: 214px;
+    }
+    #microbeadspettwo {
+        width: 126px;
+        height: 126px;
+        top: 88px;
+        left: 543px;
+    }
+    #microbeadspetthree {
+        width: 126px;
+        height: 126px;
+        top: 212px;
+        left: 379px;
+    }
+    #microbeadspetfour {
+        width: 126px;
+        height: 126px;
+        top: -42px;
+        left: 379px;
+    }
+    #microbeadsfourdum {
+        width: 136px;
+        height: 136px;
+        top: 92px;
+        left: 374px;
+    }
+    #microbeadsphtalateone {
+        width: 126px;
+        height: 126px;
+        top: 168px;
+        left: 239px;
+    }
+    #microbeadsphtalatetwo {
+        width: 126px;
+        height: 126px;
+        left: 519px;
+        top: 168px;
+    }
+    #microbeadsphtalatethree {
+        width: 126px;
+        height: 126px;
+        top: -36px;
+        left: 378px;
+    }
+    /* #foamchems{
+        overflow: hidden;
+        width: 710px;
+        height: 242px;
+    } */
+    #foamone {
+        width: 104px;
+        height: 104px;
+        left: 194px;
+        top: 98px;
+    }
+    #foamtwo {
+        width: 134px;
+        height: 103px;
+        left: 575px;
+        top: 99px;
+    }
+    #foamtwodum {
+        width: 167px;
+        height: 129px;
+        top: 94px;
+        left: 356px;
+    }
+    #foamhdpeldpeone {
+        width: 126px;
+        height: 126px;
+        top: -32px;
+        left: 379px;
+    }
+    #foamhdpeldpetwo {
+        width: 126px;
+        height: 126px;
+        top: 13px;
+        left: 507px;
+    }
+    #foamhdpeldpethree {
+        width: 126px;
+        height: 126px;
+        top: 13px;
+        left: 252px;
+    }
+    #foamhdpeldpefour {
+        width: 126px;
+        height: 126px;
+        top: 131px;
+        left: 522px;
+    }
+    #foamhdpeldpefive {
+        width: 126px;
+        height: 126px;
+        top: 131px;
+        left: 236px;
+    }
+    #foamhdpeldpesix {
+        width: 126px;
+        height: 126px;
+        top: 229px;
+        left: 439px;
+    }
+    #foamhdpeldpeseven {
+        width: 126px;
+        height: 126px;
+        top: 226px;
+        left: 320px;
+    }
+    #foamonedum {
+        width: 136px;
+        height: 136px;
+        top: 88px;
+        left: 375px;
+    }
+    #foampolystyreneone {
+        width: 126px;
+        height: 126px;
+        top: -32px;
+        left: 379px;
+    }
+    #fragmentone {
+        width: 134px;
+        height: 103px;
+        left: 569px;
+        top: 57px;
+    }
+    #fragmenttwo {
+        width: 143px;
+        height: 104px;
+        left: 385px;
+        top: -33px;
+    }
+    #fragmentthree {
+        width: 134px;
+        height: 103px;
+        left: 191px;
+        top: 188px;
+    }
+    #fragmentfour {
+        width: 104px;
+        height: 104px;
+        left: 205px;
+        top: 57px;
+    }
+    #fragmentfive {
+        width: 104px;
+        height: 104px;
+        left: 585px;
+        top: 188px;
+    }
+    #fragmentsix {
+        width: 104px;
+        height: 104px;
+        left: 397px;
+        top: 234px;
+    }
+    #fragmenttwodum {
+        width: 173px;
+        height: 125px;
+        top: 110px;
+        left: 369px;
+    }
+    #fragmentldpeone {
+        width: 126px;
+        height: 126px;
+        top: -17px;
+        left: 380px;
+    }
+    #fragmentonedum {
+        width: 167px;
+        height: 129px;
+        top: 90px;
+        left: 357px;
+    }
+    #fragmentpetone {
+        width: 126px;
+        height: 126px;
+        top: 85px;
+        left: 217px;
+    }
+    #fragmentpettwo {
+        width: 126px;
+        height: 126px;
+        top: 85px;
+        left: 548px;
+    }
+    #fragmentpetthree {
+        width: 126px;
+        height: 126px;
+        top: 227px;
+        left: 378px;
+    }
+    #fragmentpetfour {
+        width: 126px;
+        height: 126px;
+        top: -47px;
+        left: 378px;
+    }
+    #fragmentfivedum {
+        width: 136px;
+        height: 136px;
+        top: 88px;
+        left: 375px;
+    }
+    #fragmentppone {
+        width: 126px;
+        height: 126px;
+        top: -32px;
+        left: 379px;
+    }
+    #fragmentsixdum {
+        width: 136px;
+        height: 136px;
+        top: 88px;
+        left: 375px;
+    }
+    #fragmentpolystyreneone {
+        width: 126px;
+        height: 126px;
+        top: -32px;
+        left: 379px;
+    }
+    #fragmentfourdum {
+        width: 167px;
+        height: 129px;
+        top: 96px;
+        left: 358px;
+    }
+    #fragmenthdpeone {
+        width: 126px;
+        height: 126px;
+        top: 30px;
+        left: 544px;
+    }
+    #fragmenthdpetwo {
+        width: 126px;
+        height: 126px;
+        top: -32px;
+        left: 378px;
+    }
+    #fragmenthdpethree {
+        width: 126px;
+        height: 126px;
+        top: 160px;
+        left: 544px;
+    }
+    #fragmenthdpefour {
+        width: 126px;
+        height: 126px;
+        top: 235px;
+        left: 378px;
+    }
+    #fragmenthdpefive {
+        width: 126px;
+        height: 126px;
+        top: 160px;
+        left: 215px;
+    }
+    #fragmenthdpesix {
+        width: 126px;
+        height: 126px;
+        top: 30px;
+        left: 215px;
+    }
+    #fragmentthreedum {
+        width: 136px;
+        height: 136px;
+        top: 105px;
+        left: 376px;
+    }
+    #fragmentpvcone {
+        width: 126px;
+        height: 126px;
+        top: 167px;
+        left: 554px;
+    }
+    #fragmentpvctwo {
+        width: 126px;
+        height: 126px;
+        top: 50px;
+        left: 554px;
+    }
+    #fragmentpvcthree {
+        width: 126px;
+        height: 126px;
+        top: 237px;
+        left: 438px;
+    }
+    #fragmentpvcfour {
+        width: 126px;
+        height: 126px;
+        top: 237px;
+        left: 315px;
+    }
+    #fragmentpvcfive {
+        width: 126px;
+        height: 126px;
+        top: 167px;
+        left: 196px;
+    }
+    #fragmentpvcsix {
+        width: 126px;
+        height: 126px;
+        top: 50px;
+        left: 196px;
+    }
+    #fragmentpvcseven {
+        width: 126px;
+        height: 126px;
+        top: -16px;
+        left: 315px;
+    }
+    #fragmentpvceight {
+        width: 126px;
+        height: 126px;
+        top: -16px;
+        left: 438px;
+    }
+}

@@ -25,16 +25,23 @@
             </div>
         </nav>
         <div>
-            <a class="chapteropt" href="processid.html" id="opt1id">
+            <a class="chapteropt" href="processid.html" id="opt1">
             </a>
-            <a class="chapteropt" href="sourceid.html" id="opt2id">
+            <a class="chapteropt" href="sourceid.html" id="opt2" onclick="ch2resize()">
             </a>
-            <a class="chapteropt" href="effectsid.html" id="opt3id">
+            <a class="chapteropt" href="effectsid.html" id="opt3">
             </a>
         
             <button class="solution solutionid" id="solutionid" onclick="openPopSol('expcoverbg')">
                 Cara Mengatasi
             </button>
+        </div>
+        <div class="intropopup animate__fadeInDown" id="popupch2">
+            <div class="heading">Ups, opsi ini tidak tersedia di perangkatmu!</div>
+            <p>
+                Untuk mengakses, silakan gunakan laptopmu.
+            </p>
+            <a class="intropopupstart" onclick="ch2hide()">Lihat opsi lain</a>
         </div>
         <div class="coverbg" id="expcoverbg"></div>
         <div class="helppopup" id="exphelppopup">
@@ -76,5 +83,6 @@
         </div>
         <img src="images/icon/close.png" class="close" id="closesolution" onclick="closePopSol('expcoverbg')">
         <script src="js/solution.js"></script>
+        <script src="js/exp.js"></script>
     </body>
 </html>

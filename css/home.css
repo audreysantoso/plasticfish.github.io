@@ -134,6 +134,68 @@ a{
 	opacity: 1;
 }
 
+#experienceintropopup{
+	width: 100vw;
+	height: 100vh;
+	background-color: white;
+	position: fixed;
+	z-index: 10000000000000000;
+	top:0;
+	left:-100vw;
+	display: none;
+}
+
+.intropopup .heading{
+	width: 70%;
+    margin-left: 15%;
+    margin-top: 50%;
+    font-family: 'Lexend Deca';
+    font-weight: 600;
+    color: #5785f6;
+    font-size: 40px;
+    text-align: center;
+}
+
+.intropopup p{
+	color: black;
+    font-size: 12pt;
+    font-weight: 300;
+    font-family: 'Raleway';
+    line-height: 18pt;
+    text-align: center;
+    margin-top: 14px;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.intropopupstart{
+    height: 25px;
+    color: white;
+    font-size: 13pt;
+    font-weight: 300;
+    font-family: Lexend Deca;
+    display: block;
+    border: none;
+    padding: 7px;
+    text-align: center;
+    border-radius: 30px;
+    width: 180px;
+    background-color: #13448d;
+    margin-top: 25px;
+    margin-left: 348px;
+    cursor: pointer;
+}
+
+.intropopupstart:hover{
+	height: 25px;
+	background-color: #053670;
+}
+
+.intropopupstart:active{
+	height: 25px;
+	background-color: #05294c;
+}
+
 @media only screen and (max-width: 1200px) and (max-height: 1200px){
 	.titlecontainer {
 	    width: 74%;
@@ -186,6 +248,9 @@ a{
 }
 
 @media only screen and (max-width: 1000px) {
+	#experienceintropopup{
+		display: block;
+	}
   	.socmedcon{
   		top: 30%;
   		left: 4%;

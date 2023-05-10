@@ -32,14 +32,15 @@
                 <button id="effectsprev2" onclick="effectsprev2()"></button>
                 <div id="effectsintrodemo" class="guidedemo"></div>
                 <button id="effectsnext1" onclick="effectsnext1()"></button>
-                <button id="effectsnext2" onclick="closeEffectsPop();playaudioeffects('soundpicnic','soundpicnicpause','soundpicnicplay','sounddining','soundregular')"></button>
+                <button id="effectsnext2" onclick="closeEffectsPop();playaudioeffects('soundpicnic','soundpicnicpause','soundpicnicplay','sounddining','soundregular');picnicresize()"></button>
                 <div class="effectsintrodots">
                     <div id="effectsdots1" class="introdots"></div>
                     <div id="effectsdots2" class="introdots"></div>
                 </div>
-                <button id="effectsskip" onclick="closeEffectsPop();playaudioeffects('soundpicnic','soundpicnicpause','soundpicnicplay','sounddining','soundregular')">Skip</button>
+                <button id="effectsskip" onclick="closeEffectsPop();playaudioeffects('soundpicnic','soundpicnicpause','soundpicnicplay','sounddining','soundregular');picnicresize()">Skip</button>
             </div>
             <div class="topganjelan"></div>
+            <div class="coverbg" id="effectscoverbgmb"></div>
             <div id="firstplate">
                 <div class="plate1" id="plate1"></div>
                 <img src="images/plates/fragment.png" class="fishfragment fishopt1"/ id="fishfragment" onclick="opt('platefragment','fragmentchems')">
@@ -334,7 +335,7 @@
             </div>
         
             <div id="microbeadsnylon" class="research animate__animated animate__zoomIn">
-                The effects of consuming nylon is still<br> under research!
+                The effects of consuming nylon is still<br> under research
             </div>
         
         
@@ -585,9 +586,9 @@
             </div>
         
             <div class="optcont">
-                <button class="tableopt" id="picnicbtn" onclick="picnic(); playaudioeffects('soundpicnic','soundpicnicpause','soundpicnicplay','sounddining','soundregular');hidebuttoneffects('soundpicnicpause','sounddiningplay','sounddiningpause','soundregularplay','soundregularpause','soundpicnicplay');">Picnic</button>
-                <button class="tableopt" id="finediningbtn" onclick="finedining(); playaudioeffects('sounddining','sounddiningpause','sounddiningplay','soundpicnic','soundregular');hidebuttoneffects('sounddiningpause','soundpicnicplay','soundpicnicpause','soundregularplay','soundregularpause','sounddiningplay');">Fine Dining</button>
-                <button class="tableopt" id="diningroombtn" onclick="diningroom();playaudioeffects('soundregular','soundregularpause','soundregularplay','sounddining','soundpicnic');hidebuttoneffects('soundregularpause','sounddiningplay','sounddiningpause','soundpicnicplay','soundpicnicpause','soundregularplay');">Dining Room</button>
+                <button class="tableopt" id="picnicbtn" onclick="picnicresize(); playaudioeffects('soundpicnic','soundpicnicpause','soundpicnicplay','sounddining','soundregular');hidebuttoneffects('soundpicnicpause','sounddiningplay','sounddiningpause','soundregularplay','soundregularpause','soundpicnicplay');">Picnic</button>
+                <button class="tableopt" id="finediningbtn" onclick="finediningresize(); playaudioeffects('sounddining','sounddiningpause','sounddiningplay','soundpicnic','soundregular');hidebuttoneffects('sounddiningpause','soundpicnicplay','soundpicnicpause','soundregularplay','soundregularpause','sounddiningplay');">Fine Dining</button>
+                <button class="tableopt" id="diningroombtn" onclick="diningresize();playaudioeffects('soundregular','soundregularpause','soundregularplay','sounddining','soundpicnic');hidebuttoneffects('soundregularpause','sounddiningplay','sounddiningpause','soundpicnicplay','soundpicnicpause','soundregularplay');">Dining Room</button>
             </div>
         
             <div class="audiocon">
@@ -629,9 +630,6 @@
         <script src="js/filaments.js"></script>
         <script src="js/fibre.js"></script>
         <script src="js/film.js"></script>
-        <script src="js/finedining.js"></script>
-        <script src="js/picnic.js"></script>
-        <script src="js/diningroom.js"></script>
         <script src="js/audio.js"></script>
 
         <div class="coverbg" id="effectscoverbg"></div>

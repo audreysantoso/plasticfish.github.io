@@ -48,8 +48,8 @@ a{
 }
 
 .intropopupstart{
-    height: 25px;
-	color: white;
+	height: 25px;
+    color: white;
     font-size: 13pt;
     font-weight: 300;
     font-family: Lexend Deca;
@@ -58,10 +58,10 @@ a{
     padding: 7px;
     text-align: center;
     border-radius: 30px;
-    width: 180px;
+    width: 210px;
     background-color: #13448d;
     margin-top: 25px;
-    margin-left: 125px;
+    margin-left: 107px;
     cursor: pointer;
 }
 
@@ -73,6 +73,10 @@ a{
 .intropopupstart:active{
 	height: 25px;
 	background-color: #05294c;
+}
+
+#popupch2{
+	display: none;
 }
 
 a.chapteropt{
@@ -131,6 +135,15 @@ a.chapteropt{
 	.intropopupstart {
 		margin-top: 25px;
 	}
+	#popupch2 .intropopupstart{
+		margin-top: 19px;
+	}
+	#popupch2 {
+		width: 50%;
+		height: 62%;
+		left: 22%;
+		top: 11%;
+	}
 	.intropopup {
 		width: 50%;
 		height: 53%;
@@ -143,5 +156,8 @@ a.chapteropt{
 	a.chapteropt {
 		width: 184px;
 		height: 310px;
+	}
+	#popupch2{
+		display: none;
 	}
 }

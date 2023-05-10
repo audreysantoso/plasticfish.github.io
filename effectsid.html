@@ -40,6 +40,7 @@
                 <button id="effectsskip" onclick="closeEffectsPop();playaudioeffects('soundpicnic','soundpicnicpause','soundpicnicplay','sounddining','soundregular')">Lewati</button>
             </div>
             <div class="topganjelan"></div>
+            <div class="coverbg" id="effectscoverbgmb"></div>
             <div id="firstplate">
                 <div class="plate1" id="plate1"></div>
                 <img src="images/platesid/fragment.png" class="fishfragment fishopt1"/ id="fishfragment" onclick="opt('platefragment','fragmentchems')">
@@ -334,7 +335,7 @@
             </div>
         
             <div id="microbeadsnylon" class="research animate__animated animate__zoomIn">
-                The effects of consuming nylon is still<br> under research!
+                Efek mengkonsumsi Nilon <br> masih dalam penelitian
             </div>
         
         
@@ -585,9 +586,9 @@
             </div>
         
             <div class="optcont">
-                <button class="tableopt" id="picnicbtn" onclick="picnic(); playaudioeffects('soundpicnic','soundpicnicpause','soundpicnicplay','sounddining','soundregular');hidebuttoneffects('soundpicnicpause','sounddiningplay','sounddiningpause','soundregularplay','soundregularpause','soundpicnicplay');">Piknik</button>
-                <button class="tableopt" id="finediningbtn" onclick="finedining(); playaudioeffects('sounddining','sounddiningpause','sounddiningplay','soundpicnic','soundregular');hidebuttoneffects('sounddiningpause','soundpicnicplay','soundpicnicpause','soundregularplay','soundregularpause','sounddiningplay');">Fine Dining</button>
-                <button class="tableopt" id="diningroombtn" onclick="diningroom();playaudioeffects('soundregular','soundregularpause','soundregularplay','sounddining','soundpicnic');hidebuttoneffects('soundregularpause','sounddiningplay','sounddiningpause','soundpicnicplay','soundpicnicpause','soundregularplay');">Ruang makan</button>
+                <button class="tableopt" id="picnicbtn" onclick="picnicresize(); playaudioeffects('soundpicnic','soundpicnicpause','soundpicnicplay','sounddining','soundregular');hidebuttoneffects('soundpicnicpause','sounddiningplay','sounddiningpause','soundregularplay','soundregularpause','soundpicnicplay');">Piknik</button>
+                <button class="tableopt" id="finediningbtn" onclick="finediningresize(); playaudioeffects('sounddining','sounddiningpause','sounddiningplay','soundpicnic','soundregular');hidebuttoneffects('sounddiningpause','soundpicnicplay','soundpicnicpause','soundregularplay','soundregularpause','sounddiningplay');">Fine Dining</button>
+                <button class="tableopt" id="diningroombtn" onclick="diningresize();playaudioeffects('soundregular','soundregularpause','soundregularplay','sounddining','soundpicnic');hidebuttoneffects('soundregularpause','sounddiningplay','sounddiningpause','soundpicnicplay','soundpicnicpause','soundregularplay');">Ruang makan</button>
             </div>
         
             <div class="audiocon">
@@ -625,13 +626,11 @@
         <script src="js/effects.js"></script>
         <script src="js/fragment.js"></script>
         <script src="js/foam.js"></script>
-        <script src="js/microbeads.js"></script>
+        <script src="js/microbeadsid.js"></script>
         <script src="js/filaments.js"></script>
         <script src="js/fibre.js"></script>
         <script src="js/film.js"></script>
-        <script src="js/finedining.js"></script>
-        <script src="js/picnic.js"></script>
-        <script src="js/diningroom.js"></script>
+        <script src="js/effectsid.js"></script>
         <script src="js/audio.js"></script>
 
         <div class="coverbg" id="effectscoverbg"></div>

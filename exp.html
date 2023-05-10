@@ -27,7 +27,7 @@
         <div>
             <a class="chapteropt" href="process.html" id="opt1">
             </a>
-            <a class="chapteropt" href="source.html" id="opt2">
+            <a class="chapteropt" href="source.html" id="opt2" onclick="ch2resize()">
             </a>
             <a class="chapteropt" href="effects.html" id="opt3">
             </a>
@@ -35,6 +35,13 @@
             <button class="solution" onclick="openPopSol('expcoverbg')">
                 What can i do?
             </button>
+        </div>
+        <div class="intropopup animate__fadeInDown" id="popupch2">
+            <div class="heading">Oops, this chapter is not available on your device!</div>
+            <p>
+                To have the full experience, please access this chapter from your laptop!
+            </p>
+            <a class="intropopupstart" onclick="ch2hide()">Explore other chapters!</a>
         </div>
         <div class="coverbg" id="expcoverbg"></div>
         <div class="helppopup" id="exphelppopup">
@@ -48,7 +55,7 @@
                 </span>
             </p>
         </div>
-        <img src="images/icon/close.png" class="close" id="expclose" onclick="closehelppopup('expcoverbg','exphelppopup','expclose')">
+        <img src="images/icon/close.png" class="close closehelp" id="expclose" onclick="closehelppopup('expcoverbg','exphelppopup','expclose')">
 
         <script src="js/helppopup.js"></script>
 
@@ -76,5 +83,6 @@
         </div>
         <img src="images/icon/close.png" class="close" id="closesolution" onclick="closePopSol('expcoverbg')">
         <script src="js/solution.js"></script>
+        <script src="js/exp.js"></script>
     </body>
 </html>
