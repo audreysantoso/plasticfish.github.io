@@ -586,9 +586,14 @@
             </div>
         
             <div class="optcont">
-                <button class="tableopt" id="picnicbtn" onclick="picnicresize(); playaudioeffects('soundpicnic','soundpicnicpause','soundpicnicplay','sounddining','soundregular');hidebuttoneffects('soundpicnicpause','sounddiningplay','sounddiningpause','soundregularplay','soundregularpause','soundpicnicplay');">Piknik</button>
-                <button class="tableopt" id="finediningbtn" onclick="finediningresize(); playaudioeffects('sounddining','sounddiningpause','sounddiningplay','soundpicnic','soundregular');hidebuttoneffects('sounddiningpause','soundpicnicplay','soundpicnicpause','soundregularplay','soundregularpause','sounddiningplay');">Fine Dining</button>
-                <button class="tableopt" id="diningroombtn" onclick="diningresize();playaudioeffects('soundregular','soundregularpause','soundregularplay','sounddining','soundpicnic');hidebuttoneffects('soundregularpause','sounddiningplay','sounddiningpause','soundpicnicplay','soundpicnicpause','soundregularplay');">Ruang makan</button>
+                <button class="tableopt" id="picnicbtn" onclick="picnic(); playaudioeffects('soundpicnic','soundpicnicpause','soundpicnicplay','sounddining','soundregular');hidebuttoneffects('soundpicnicpause','sounddiningplay','sounddiningpause','soundregularplay','soundregularpause','soundpicnicplay');">Piknik</button>
+                <button class="tableopt" id="finediningbtn" onclick="finedining(); playaudioeffects('sounddining','sounddiningpause','sounddiningplay','soundpicnic','soundregular');hidebuttoneffects('sounddiningpause','soundpicnicplay','soundpicnicpause','soundregularplay','soundregularpause','sounddiningplay');">Fine Dining</button>
+                <button class="tableopt" id="diningroombtn" onclick="dining();playaudioeffects('soundregular','soundregularpause','soundregularplay','sounddining','soundpicnic');hidebuttoneffects('soundregularpause','sounddiningplay','sounddiningpause','soundpicnicplay','soundpicnicpause','soundregularplay');">Ruang makan</button>
+            </div>
+            <div class="optcontsmall">
+                <button class="tableopt" id="picnicbtnsmall" onclick="picnicresize(); playaudioeffects('soundpicnic','soundpicnicpause','soundpicnicplay','sounddining','soundregular');hidebuttoneffects('soundpicnicpause','sounddiningplay','sounddiningpause','soundregularplay','soundregularpause','soundpicnicplay');">Piknik</button>
+                <button class="tableopt" id="finediningbtnsmall" onclick="finediningresize(); playaudioeffects('sounddining','sounddiningpause','sounddiningplay','soundpicnic','soundregular');hidebuttoneffects('sounddiningpause','soundpicnicplay','soundpicnicpause','soundregularplay','soundregularpause','sounddiningplay');">Fine Dining</button>
+                <button class="tableopt" id="diningroombtnsmall" onclick="diningresize();playaudioeffects('soundregular','soundregularpause','soundregularplay','sounddining','soundpicnic');hidebuttoneffects('soundregularpause','sounddiningplay','sounddiningpause','soundpicnicplay','soundpicnicpause','soundregularplay');">Ruang makan</button>
             </div>
         
             <div class="audiocon">
@@ -630,6 +635,9 @@
         <script src="js/filaments.js"></script>
         <script src="js/fibre.js"></script>
         <script src="js/film.js"></script>
+        <script src="js/picnicid.js"></script>
+        <script src="js/finediningid.js"></script>
+        <script src="js/diningroomid.js"></script>
         <script src="js/effectsid.js"></script>
         <script src="js/audio.js"></script>
 
