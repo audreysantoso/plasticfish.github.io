@@ -1,7 +1,7 @@
 @import url('fishanimated.css');
 
 body{
-    background-image: url('../images/source.png');
+    background-image: url('../images/source.gif');
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
