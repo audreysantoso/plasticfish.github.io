@@ -1,15 +1,3 @@
-.soundoptions{
-    background-color: transparent;
-    width: 60px;
-    height: 40px;
-    border: none;
-    background-size: contain;
-    cursor: pointer;
-    position: fixed;
-    bottom: 50px;
-    left: 30px;
-}
-
 .soundoptionsplaytp{
     background-image: url('../images/icon/voltp.png');
     background-repeat: no-repeat;

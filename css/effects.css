@@ -1903,6 +1903,18 @@ a{
     height: 50px;
 }
 
+.soundoptions{
+    background-color: transparent;
+    width: 60px;
+    height: 40px;
+    border: none;
+    background-size: contain;
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    left: 30px;
+}
+
 @media only screen and (max-width: 1000px) {
     #bodyeffects{
         background-size: cover;
