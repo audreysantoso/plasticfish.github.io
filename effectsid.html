@@ -27,7 +27,7 @@
             </div>
         </nav>
         <div class="effects" id="effects">
-            <div class="guidepopup guidepopup animate__fadeInDown" id="introeffectspopup">
+            <div class="guidepopup guidepopup animate__fadeIn" id="introeffectspopup">
                 <p id="effectspopupp" class="guidepopupp">Klik ikan/piring yang mau kamu eksplor dan klik elemen yang sama untuk kembali</p>
                 <button id="effectsprev2" onclick="effectsprev2id()"></button>
                 <div id="effectsintrodemo" class="guidedemo"></div>
@@ -642,7 +642,7 @@
         <script src="js/audio.js"></script>
 
         <div class="coverbg" id="effectscoverbg"></div>
-        <div class="helppopup" id="effectshelppopup">
+        <div class="helppopup animate__animated animate__fadeIn" id="effectshelppopup">
             <p class="helppopuptext">
                 Seiring meningkatnya penggunaan plastik, semakin banyak sampah yang berada. Menurut Kementerian Lingkungan Hidup dan Kehutanan Indonesia (2021), terdapat 28,5 juta ton sampah per tahun dan 17% (4,85 juta ton) berasal dari plastik. Sampah plastik ini bisa terurai menjadi mikroplastik yang mencemari air tawar. Mikroplastik bisa berasal dari objek plastik besar atau kecil, seperti lulur tubuh atau deterjen pencuci baju.
                 <br><br>
@@ -653,11 +653,11 @@
                 </span>
             </p>
         </div>
-        <img src="images/icon/close.png" class="close" id="effectsclose" onclick="closehelppopup('effectscoverbg','effectshelppopup','effectsclose')">
+        <img src="images/icon/close.png" class="close animate__animated animate__fadeIn" id="effectsclose" onclick="closehelppopup('effectscoverbg','effectshelppopup','effectsclose')">
 
         <script src="js/helppopup.js"></script>
 
-        <div class="solpopup animate__fadeInDown" id="solpopup">
+        <div class="solpopup  animate__animated animate__fadeIn" id="solpopup">
             <p>
                 Cara Paling Efektif <br>
                 <span class="level1">Hentikan penggunaan plastik, terutama yang sekali pakai</span> <br><br>
@@ -678,7 +678,7 @@
                 <a href="https://www.perchenergy.com/blog/lifestyle/reduce-microplastic-pollution-consumption" target="_blank">(Perch Energy, 2022)</a>
             </p>
         </div>
-        <img src="images/icon/close.png" class="close" id="closesolution" onclick="closePopSol('effectscoverbg')">
+        <img src="images/icon/close.png" class="close animate__animated animate__fadeIn" id="closesolution" onclick="closePopSol('effectscoverbg')">
         <script src="js/solution.js"></script>
     </body>
 </html>

@@ -25,18 +25,18 @@
             </div>
         </nav>
         <div>
-            <a class="chapteropt" href="processid.html" id="opt1">
+            <a class="chapteropt" href="processid.html" id="opt1id">
             </a>
-            <a class="chapteropt" href="sourceid.html" id="opt2" onclick="ch2resize()">
+            <a class="chapteropt" href="sourceid.html" id="opt2id">
             </a>
-            <a class="chapteropt" href="effectsid.html" id="opt3">
+            <a class="chapteropt" href="effectsid.html" id="opt3id">
             </a>
         
             <button class="solution solutionid" id="solutionid" onclick="openPopSol('expcoverbg')">
                 Cara Mengatasi
             </button>
         </div>
-        <div class="intropopup animate__fadeInDown" id="popupch2">
+        <div class="intropopup animate__fadeIn" id="popupch2">
             <div class="heading">Ups, opsi ini tidak tersedia di perangkatmu!</div>
             <p>
                 Untuk mengakses, silakan gunakan laptopmu.
@@ -44,7 +44,7 @@
             <a class="intropopupstart" onclick="ch2hide()">Lihat opsi lain</a>
         </div>
         <div class="coverbg" id="expcoverbg"></div>
-        <div class="helppopup" id="exphelppopup">
+        <div class="helppopup animate__animated animate__fadeIn" id="exphelppopup">
             <p class="helppopuptext">
                 Seiring meningkatnya penggunaan plastik, semakin banyak sampah yang berada. Menurut Kementerian Lingkungan Hidup dan Kehutanan Indonesia (2021), terdapat 28,5 juta ton sampah per tahun dan 17% (4,85 juta ton) berasal dari plastik. Sampah plastik ini bisa terurai menjadi mikroplastik yang mencemari air tawar. Mikroplastik bisa berasal dari objek plastik besar atau kecil, seperti lulur tubuh atau deterjen pencuci baju.
                 <br><br>
@@ -55,11 +55,11 @@
                 </span>
             </p>
         </div>
-        <img src="images/icon/close.png" class="close" id="expclose" onclick="closehelppopup('expcoverbg','exphelppopup','expclose')">
+        <img src="images/icon/close.png" class="close animate__animated animate__fadeIn" id="expclose" onclick="closehelppopup('expcoverbg','exphelppopup','expclose')">
 
         <script src="js/helppopup.js"></script>
 
-        <div class="solpopup animate__fadeInDown" id="solpopup">
+        <div class="solpopup  animate__animated animate__fadeIn" id="solpopup">
             <p>
                 Cara Paling Efektif <br>
                 <span class="level1">Hentikan penggunaan plastik, terutama yang sekali pakai</span> <br><br>
@@ -81,8 +81,7 @@
                 <a href="https://www.perchenergy.com/blog/lifestyle/reduce-microplastic-pollution-consumption" target="_blank">(Perch Energy, 2022)</a>
             </p>
         </div>
-        <img src="images/icon/close.png" class="close" id="closesolution" onclick="closePopSol('expcoverbg')">
+        <img src="images/icon/close.png" class="close animate__animated animate__fadeIn" id="closesolution" onclick="closePopSol('expcoverbg')">
         <script src="js/solution.js"></script>
-        <script src="js/exp.js"></script>
     </body>
 </html>

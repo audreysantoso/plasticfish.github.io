@@ -168,20 +168,20 @@ nav{
 		top: 9%;
 	}
 	img.close {
-        right: 14%;
-		top: 9%;
-		width: 4.5%;
+		right: 129px;
+		width: 40px;
+		top: 36px;
 	}
 	img.closehelp{
 		right: 14%;
 		top: 9%;
 		width: 4.5%;
 	}
-	.helppopup{
-		height: 62%;
-		top: 12%;
-		width: 60%;
-		left: 17%;
+	.helppopup {
+		height: 233px;
+		top: 49px;
+		width: 533px;
+		left: 150px;
 		overflow-y: scroll;
 	}
 }

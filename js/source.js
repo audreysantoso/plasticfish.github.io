@@ -1,5 +1,5 @@
 function sourcenext1(){
-    document.getElementById('sourcepopupp').innerHTML = "See how many fish you've collected at the end";
+    document.getElementById('sourcepopupp').innerHTML = "See how many fish you have collected at the end";
     document.getElementById('sourceintrodemo').style.backgroundImage = "url('images/sourcetut2.gif')";
     document.getElementById('sourcenext1').style.display="none";
     document.getElementById('sourcenext2').style.display="block";
@@ -8,7 +8,7 @@ function sourcenext1(){
     document.getElementById('sourcedots2').style.backgroundColor="#FFC700";
 }
 function sourceprev2(){
-    document.getElementById('sourcepopupp').innerHTML = "Click as many fish with plastic as possible to collect them";
+    document.getElementById('sourcepopupp').innerHTML = "Click as many fish containing the microplastic source as possible to collect them";
     document.getElementById('sourceintrodemo').style.backgroundImage = "url('images/sourcetut1.gif')";
     document.getElementById('sourcenext2').style.display="none";
     document.getElementById('sourcenext1').style.display="block";

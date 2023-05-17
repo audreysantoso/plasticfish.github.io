@@ -27,7 +27,7 @@
         <div>
             <a class="chapteropt" href="process.html" id="opt1">
             </a>
-            <a class="chapteropt" href="sourcemob.html" id="opt2" onclick="ch2resize()">
+            <a class="chapteropt" href="source.html" id="opt2">
             </a>
             <a class="chapteropt" href="effects.html" id="opt3">
             </a>
@@ -36,30 +36,30 @@
                 What can i do?
             </button>
         </div>
-        <div class="intropopup animate__fadeInDown" id="popupch2">
+        <!-- <div class="intropopup animate__fadeIn" id="popupch2">
             <div class="heading">Oops, this chapter is not available on your device!</div>
             <p>
                 To have the full experience, please access this chapter from your laptop!
             </p>
             <a class="intropopupstart" onclick="ch2hide()">Explore other chapters!</a>
-        </div>
+        </div> -->
         <div class="coverbg" id="expcoverbg"></div>
         <div class="helppopup" id="exphelppopup">
-            <p class="helppopuptext">
-                As the use  of plastic increase, so does the waste. According to the Ministry of Environment and Forestry of The Republic of Indonesia (2021), Indonesia produces 28,5 million tons of trash annually, and 17% of them (4,85 million tons) come from plastics. Parts of these trash can turn into microplastic that polluts the freshwater. Microplastics can come from decays of larger plastic objects or small plastic bits such as from body scrubs and laundry detergent. 
+            <p class="helppopuptext animate__animated animate__fadeIn">
+                As the use of plastic increases, so does the waste. According to the Ministry of Environment and Forestry of The Republic of Indonesia (2021), Indonesia produces 28,5 million tons of trash annually, and 17% of them (4,85 million tons) come from plastics. Parts of this trash can turn into microplastic that pollutes the freshwater. Microplastics can come from decays of larger objects or small plastic bits such as body scrubs and laundry detergent.  
                 <br><br>
-                This website intends to spread awareness about microplastic, including its sources, process of being eaten by the fish, and the health effects on human. You can also make an impact on this issue by donating or signing petition of the Ecoton Organization. Ecoton is an Indonesian-based environment organization that focuses on river conservation. 
+                This website intends to spread awareness about microplastic, including its sources, the fish's eating process, and the health effects on humans. You can also impact this issue by donating or signing a petition of the Ecoton Organization. Ecoton is an Indonesian-based environment organization that focuses on river conservation.  
                 <br><br>
                 <span id="rafflesmark">This website is built as a final project for <br>
                     <img src="images/raffles.jpeg"/>
                 </span>
             </p>
         </div>
-        <img src="images/icon/close.png" class="close closehelp" id="expclose" onclick="closehelppopup('expcoverbg','exphelppopup','expclose')">
+        <img src="images/icon/close.png" class="close closehelp animate__animated animate__fadeIn" id="expclose" onclick="closehelppopup('expcoverbg','exphelppopup','expclose')">
 
         <script src="js/helppopup.js"></script>
 
-        <div class="solpopup animate__fadeInDown" id="solpopup">
+        <div class="solpopup  animate__animated animate__fadeIn" id="solpopup">
             <p>
                 Most Effective Thing to Do <br>
                 <span class="level1">Stop plastic use, especially single-use plastic</span> <br><br>
@@ -81,8 +81,7 @@
                 <a href="https://www.perchenergy.com/blog/lifestyle/reduce-microplastic-pollution-consumption" target="_blank">(Perch Energy, 2022)</a>
             </p>
         </div>
-        <img src="images/icon/close.png" class="close" id="closesolution" onclick="closePopSol('expcoverbg')">
+        <img src="images/icon/close.png" class="close animate__animated animate__fadeIn" id="closesolution" onclick="closePopSol('expcoverbg')">
         <script src="js/solution.js"></script>
-        <script src="js/exp.js"></script>
     </body>
 </html>

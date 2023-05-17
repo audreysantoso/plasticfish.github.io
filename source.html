@@ -28,8 +28,8 @@
         </nav>
         <script src="js/localstorage.js"></script>
         <div class="source" id="source">
-            <div class="guidepopup guidepopup animate__fadeInDown" id="introsourcepopup">
-                <p id="sourcepopupp" class="guidepopupp">Click as many fish containing source of microplastic as possible to collect them</p>
+            <div class="guidepopup guidepopup animate__fadeIn" id="introsourcepopup">
+                <p id="sourcepopupp" class="guidepopupp">Click as many fish containing the microplastic source as possible to collect them</p>
                 <button id="sourceprev2" onclick="sourceprev2()"></button>
                 <div id="sourceintrodemo" class="guidedemo"></div>
                 <button id="sourcenext1" onclick="sourcenext1()"></button>
@@ -40,7 +40,7 @@
                 </div>
                 <button id="sourceskip" onclick="closeSourcePop();startgame();playaudio()">Skip</button>
             </div>
-            <div class="animate__fadeInDown" id="pausepopup">
+            <div class="animate__fadeIn" id="pausepopup">
                 <div class="pausepopupheading">
                     Game Pause
                 </div>
@@ -415,7 +415,7 @@
         <button class="soundoptions soundoptionspausetp" id="soundpause" onclick="playaudio();enablepopsound()"></button>
         <button class="soundoptions soundoptionsplaytp" id="soundplay" onclick="pauseaudio();mutepopsound()"></button>
         <div class="coverbg" id="sourcecoverbg"></div>
-        <div class="helppopup" id="sourcehelppopup">
+        <div class="helppopup animate__animated animate__fadeIn" id="sourcehelppopup">
             <p class="helppopuptext">
                 As the use  of plastic increase, so does the waste. According to the Ministry of Environment and Forestry of The Republic of Indonesia (2021), Indonesia produces 28,5 million tons of trash annually, and 17% of them (4,85 million tons) come from plastics. Parts of these trash can turn into microplastic that polluts the freshwater. Microplastics can come from decays of larger plastic objects or small plastic bits such as from body scrubs and laundry detergent. 
                 <br><br>
@@ -426,7 +426,7 @@
                 </span>
             </p>
         </div>
-        <img src="images/icon/close.png" class="close" id="sourceclose" onclick="closehelppopup('sourcecoverbg','sourcehelppopup','sourceclose');play();">
+        <img src="images/icon/close.png" class="close animate__animated animate__fadeIn" id="sourceclose" onclick="closehelppopup('sourcecoverbg','sourcehelppopup','sourceclose');play();" style="right: 509px;">
 
         <script src="js/helppopup.js"></script>
         <script src="js/source.js"></script>

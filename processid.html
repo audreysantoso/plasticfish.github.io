@@ -27,7 +27,7 @@
             </div>
         </nav>
         <div id="process">
-            <div class="guidepopup animate__fadeInDown" id="introprocesspopup">
+            <div class="guidepopup animate__fadeIn" id="introprocesspopup">
                 <p class="guidepopupp" id="processpopupp">Pertama, pilih video yang mau kamu tonton</p>
                 <button id="processprev2" onclick="processprev2id()"></button>
                 <div id="processintrodemo" class="guidedemo"></div>
@@ -70,7 +70,7 @@
             <img src="images/icon/back.png" class="backbuttonvid" id="backbuttonvidconfusion" onclick="showbackpopup('backbtnpopupconfusion', 'confusion');"/>
             <img src="images/icon/back.png" class="backbuttonvid" id="backbuttonvidaccidental" onclick="showbackpopup('backbtnpopupaccidental', 'accidental');"/>
     
-            <div class="intropopup animate__fadeInDown backbtnpopup" id="backbtnpopupconsumption">
+            <div class="intropopup  animate__animated animate__fadeIn backbtnpopup" id="backbtnpopupconsumption">
                 <div class="heading">Masih ada beberapa detik lagi!</div>
                 <p>
                     Kamu yakin mau pergi?
@@ -79,7 +79,7 @@
                 <button class="start2 exit" onclick="backbuttonvid('backbtnpopupconsumption', 'consumption', 'backbuttonvidconsumption')">Lihat video lain</button>
             </div>
         
-            <div class="intropopup animate__fadeInDown backbtnpopup" id="backbtnpopupconfusion">
+            <div class="intropopup  animate__animated animate__fadeIn backbtnpopup" id="backbtnpopupconfusion">
                 <div class="heading">Masih ada beberapa detik lagi!</div>
                 <p>
                     Kamu yakin mau pergi?
@@ -88,7 +88,7 @@
                 <button class="start2 exit" onclick="backbuttonvid('backbtnpopupconfusion', 'confusion', 'backbuttonvidconfusion')">Lihat video lain</button>
             </div>
         
-            <div class="intropopup animate__fadeInDown backbtnpopup" id="backbtnpopupaccidental">
+            <div class="intropopup  animate__animated animate__fadeIn backbtnpopup" id="backbtnpopupaccidental">
                 <div class="heading">Masih ada beberapa detik lagi!</div>
                 <p>
                     Kamu yakin mau pergi?
@@ -102,7 +102,7 @@
         </div>
 
         <div class="coverbg" id="processcoverbg"></div>
-        <div class="helppopup" id="processhelppopup">
+        <div class="helppopup animate__animated animate__fadeIn" id="processhelppopup">
             <p class="helppopuptext">
                 Seiring meningkatnya penggunaan plastik, semakin banyak sampah yang berada. Menurut Kementerian Lingkungan Hidup dan Kehutanan Indonesia (2021), terdapat 28,5 juta ton sampah per tahun dan 17% (4,85 juta ton) berasal dari plastik. Sampah plastik ini bisa terurai menjadi mikroplastik yang mencemari air tawar. Mikroplastik bisa berasal dari objek plastik besar atau kecil, seperti lulur tubuh atau deterjen pencuci baju.
                 <br><br>
@@ -113,11 +113,11 @@
                 </span>
             </p>
         </div>
-        <img src="images/icon/close.png" class="close" id="processclose" onclick="closehelppopup('processcoverbg','processhelppopup','processclose')">
+        <img src="images/icon/close.png" class="close animate__animated animate__fadeIn" id="processclose" onclick="closehelppopup('processcoverbg','processhelppopup','processclose')">
 
         <script src="js/helppopup.js"></script>
 
-        <div class="solpopup animate__fadeInDown" id="solpopup">
+        <div class="solpopup animate__animated animate__fadeIn" id="solpopup">
             <p>
                 Cara Paling Efektif <br>
                 <span class="level1">Hentikan penggunaan plastik, terutama yang sekali pakai</span> <br><br>
@@ -137,7 +137,7 @@
                 </ul> <br>
                 <a href="https://www.perchenergy.com/blog/lifestyle/reduce-microplastic-pollution-consumption" target="_blank">(Perch Energy, 2022)</a>
         </div>
-        <img src="images/icon/close.png" class="close" id="closesolution" onclick="closePopSol('processcoverbg')">
+        <img src="images/icon/close.png" class="close animate__animated animate__fadeIn" id="closesolution" onclick="closePopSol('processcoverbg')">
         <script src="js/solution.js"></script>
         <script src="js/process.js"></script>
         <script src="js/underwateraudio.js"></script>

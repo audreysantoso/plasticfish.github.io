@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Plastic Fish</title>
         <link rel="stylesheet" href="css/global.css">
-        <link rel="stylesheet" href="css/source.css">
+        <link rel="stylesheet" href="css/sourceid.css">
         <link rel="stylesheet" href="css/nav.css">
         <link rel="stylesheet" href="css/solutionpopup.css">
         <link rel="stylesheet" href="css/guidepopup.css">
@@ -28,7 +28,7 @@
         </nav>
         <script src="js/localstorage.js"></script>
         <div class="source" id="source">
-            <div class="guidepopup guidepopup animate__fadeInDown" id="introsourcepopup">
+            <div class="guidepopup guidepopup animate__fadeIn" id="introsourcepopup">
                 <p id="sourcepopupp" class="guidepopupp">Klik sebanyak mungkin ikan yang mengandung objek sumber mikroplastik</p>
                 <button id="sourceprev2" onclick="sourceprev2id()"></button>
                 <div id="sourceintrodemo" class="guidedemo"></div>
@@ -40,7 +40,7 @@
                 </div>
                 <button id="sourceskip" onclick="closeSourcePop();startgame();playaudio()">Lewati</button>
             </div>
-            <div class="animate__fadeInDown" id="pausepopup">
+            <div class="animate__fadeIn" id="pausepopup">
                 <div class="pausepopupheading">
                     Permainan terhenti
                 </div>
@@ -415,7 +415,7 @@
         <button class="soundoptions soundoptionspausetp" id="soundpause" onclick="playaudio();enablepopsound()"></button>
         <button class="soundoptions soundoptionsplaytp" id="soundplay" onclick="pauseaudio();mutepopsound()"></button>
         <div class="coverbg" id="sourcecoverbg"></div>
-        <div class="helppopup" id="sourcehelppopup">
+        <div class="helppopup animate__animated animate__fadeIn" id="sourcehelppopup">
             <p class="helppopuptext">
                 Seiring meningkatnya penggunaan plastik, semakin banyak sampah yang berada. Menurut Kementerian Lingkungan Hidup dan Kehutanan Indonesia (2021), terdapat 28,5 juta ton sampah per tahun dan 17% (4,85 juta ton) berasal dari plastik. Sampah plastik ini bisa terurai menjadi mikroplastik yang mencemari air tawar. Mikroplastik bisa berasal dari objek plastik besar atau kecil, seperti lulur tubuh atau deterjen pencuci baju.
                 <br><br>
@@ -426,7 +426,7 @@
                 </span>
             </p>
         </div>
-        <img src="images/icon/close.png" class="close" id="sourceclose" onclick="closehelppopup('sourcecoverbg','sourcehelppopup','sourceclose');play();">
+        <img src="images/icon/close.png" class="close animate__animated animate__fadeIn" id="sourceclose" onclick="closehelppopup('sourcecoverbg','sourcehelppopup','sourceclose');play();" style="right: 509px;">
 
         <script src="js/helppopup.js"></script>
         <script src="js/source.js"></script>

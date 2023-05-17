@@ -13,7 +13,7 @@ function effectsnext1(){
     document.getElementById('effectsdots2').style.backgroundColor="#FFC700";
 }
 function effectsprev2(){
-    document.getElementById('effectspopupp').innerHTML = "Click on the fish/plate you want to explore and click on the same element to go back";
+    document.getElementById('effectspopupp').innerHTML = "Click on the fish or plate that you want to explore and click on the same element to go back";
     document.getElementById('effectsintrodemo').style.backgroundImage = "url('images/effectstut1.gif')";
     document.getElementById('effectsnext2').style.display="none";
     document.getElementById('effectsnext1').style.display="block";

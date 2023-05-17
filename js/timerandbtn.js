@@ -15,7 +15,17 @@ function updateTimer() {
     // Display the hidden div
     const end = document.getElementById('end');
     end.classList.remove('hiddenEnd');
-    
+
+    const pausebtn = document.getElementById('playpausepause');
+    pausebtn.classList.add('hidething');
+    const playbtn = document.getElementById('playpauseplay');
+    playbtn.classList.add('hidething');
+
+    const soundpausebtn = document.getElementById('soundpause');
+    soundpausebtn.classList.add('hidething');
+    const soundplaybtn = document.getElementById('soundplay');
+    soundplaybtn.classList.add('hidething');
+
     const x = localStorage.getItem("mystorage");
     if (x.includes("bag") == true) {
         document.getElementById('bag_disp').style.opacity="1";
