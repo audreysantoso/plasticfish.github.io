@@ -87,3 +87,66 @@
     0%   {left:-400px; top:540px;}
     100% {left:1440px; top:540px;}
 }
+
+
+
+/*mobile devices*/
+@keyframes anim19 {
+    0%   {left:1440px; top:180px;}
+    100% {left:-400px; top:180px;}
+}
+
+@keyframes anim20 {
+    0%   {left:1440px; top:50px;}
+    100% {left:-400px; top:50px;}
+}
+
+@keyframes anim21 {
+    0%   {left:1440px; top:270px;}
+    100% {left:-400px; top:270px;}
+}
+
+@keyframes anim22 {
+    0%   {left:1440px; top:140px;}
+    100% {left:-400px; top:140px;}
+}
+
+@keyframes anim23 {
+    0%   {left:1440px; top:120px;}
+    100% {left:-400px; top:120px;}
+}
+
+@keyframes anim24 {
+    0%   {left:1440px; top:240px;}
+    100% {left:-400px; top:240px;}
+}
+
+@keyframes anim25 {
+    0%   {left:1440px; top:280px;}
+    100% {left:-400px; top:280px;}
+}
+
+@keyframes anim26 {
+    0%   {left:-400px; top:70px;}
+    100% {left:1440px; top:70px;}
+}
+
+@keyframes anim27 {
+    0%   {left:-400px; top:225px;}
+    100% {left:1440px; top:225px;}
+}
+
+@keyframes anim28 {
+    0%   {left:-400px; top:250px;}
+    100% {left:1440px; top:250px;}
+}
+
+@keyframes anim29{
+    0%   {left:-400px; top:300px;}
+    100% {left:1440px; top:300px;}
+}
+
+@keyframes anim30{
+    0%   {left:-400px; top:200px;}
+    100% {left:1440px; top:200px;}
+}

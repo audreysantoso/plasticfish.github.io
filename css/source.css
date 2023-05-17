@@ -5,7 +5,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
-	background-color: black;
+    background-color: black;
 }
 
 #sourcecoverbg{
@@ -1162,4 +1162,701 @@ nav{
 #sourceskip:hover{
     opacity: 1;
 	font-weight: 300;
+}
+
+@media only screen and (max-width: 1000px) {
+    #introsourcepopup p {
+        font-size: 16px;
+        margin-top: -10px;
+    }
+    .sourceintrodots {
+        margin-left: 247px;
+        margin-top: 10px;
+    }
+    #sourceskip{
+        top: 224px;
+        left: 510px;
+    }
+    #sourceintrodemo {
+        width: 57%;
+        height: 80%;
+        margin-top: 15px;
+        margin-left: 22%;
+    }
+    #introsourcepopup{
+        left: 137px;
+        top: 33px;
+        width: 517px;
+        height: 204px;
+    }
+    #introsourcepopup p {
+        font-size: 16px;
+    }
+    #sourceprev2 {
+        left: 64px;
+        top: 141px;
+    }
+    #sourcenext1, #sourcenext2 {
+        left: 532px;
+        top: 141px;
+    }
+    .sourceintrodots {
+        margin-left: 247px;
+        margin-top: 24px;
+    }
+    .fish{
+        width: 12%;
+    }
+    #bag{
+        animation-name: anim19;
+    }
+    
+    #scrub{
+        animation-name: anim20;
+        animation-delay: 5s;
+    }
+    
+    #gloves{
+        animation-name: anim21;
+        animation-delay: 2s;
+    }
+    
+    #mask{
+        animation-name: anim22;
+        animation-delay: 14s;
+    }
+    
+    #cans{
+        animation-name: anim23;
+        animation-delay: 10s;
+    }
+    
+    #net{
+        animation-name: anim24;
+        animation-delay: 9s;
+    }
+    
+    #straw{
+        animation-name: anim22;
+        animation-delay: 5s;
+    }
+    
+    #bottle{
+        animation-name: anim25;
+        animation-delay: 10s;
+    }
+    
+    #sponge{
+        animation-name: anim19;
+        animation-delay: 17s;
+    }
+    
+    #bangle{
+        animation-name: anim21;
+        animation-delay: 12s;
+    }
+    
+    #folders{
+        animation-name: anim24;
+        animation-delay: 13s;
+    }
+    
+    #clothes{
+        animation-name: anim25;
+        animation-delay: 6s;
+    }
+    
+    #container{
+        animation-name: anim23;
+        animation-delay: 8s;
+    }
+    
+    #sheets{
+        animation-name: anim20;
+        animation-delay: 15s;
+    }
+    
+    #pellets{
+        animation-name: anim26;
+    }
+    
+    #yarn{
+        animation-name: anim27;
+        animation-delay: 7s;
+    }
+    
+    #glass{
+        animation-name: anim29;
+        animation-delay: 8s;
+    }
+    
+    #hanger{
+        animation-name: anim28;
+        animation-delay: 15s;
+    }
+    
+    #cd{
+        animation-name: anim28;
+        animation-delay: 2s;
+    }
+    
+    #snack{
+        animation-name: anim26;
+        animation-delay: 12s;
+    }
+    
+    #nail{
+        animation-name: anim30;
+        animation-delay: 10s;
+    }
+    
+    #film{
+        animation-name: anim29;
+        animation-delay: 4s;
+    }
+    
+    #tire{
+        animation-name: anim30;
+        animation-delay: 1s;
+    }
+    
+    #tape{
+        animation-name: anim28;
+        animation-delay: 8s;
+    }
+    
+    #cutleries{
+        animation-name: anim28;
+        animation-delay: 5s;
+    }
+    
+    #paint{
+        animation-name: anim28;
+        animation-delay: 13s;
+    }
+    
+    #toys{
+        animation-name: anim28;
+        animation-delay: 11s;
+    }
+    
+    #makeup{
+        animation-name: anim26;
+        animation-delay: 10s;
+    }
+    
+    #en1{
+       animation-name: anim23; 
+       animation-delay: 1.5s;
+    }
+    
+    #en2{
+        animation-name: anim30;
+        animation-delay: 3s;
+    }
+    
+    #en3{
+        animation-name: anim28;
+        animation-delay: 4s;
+    }
+    
+    #en4{
+        animation-name: anim28;
+        animation-delay: 2s;
+    }
+    
+    #en5{
+        animation-name: anim25;
+        animation-delay: 1s;
+    }
+    
+    #en6{
+        animation-name: anim21;
+        animation-delay: 4s;
+    }
+    
+    #en7{
+        animation-name: anim24;
+        animation-delay: 3.5s;
+    }
+    
+    #en8{
+        animation-name: anim28;
+        animation-delay: 10s;
+    }
+    
+    #en9{
+        animation-name: anim29;
+        animation-delay: 6s;
+    }
+    
+    #en10{
+        animation-name: anim30;
+        animation-delay: 9s;
+    }
+    
+    #en11{
+        animation-name: anim20;
+        animation-delay: 2s;
+    }
+    
+    #en12{
+        animation-name: anim23;
+        animation-delay: 4s;
+    }
+    
+    #en13{
+        animation-delay: anim19;
+        animation-delay: 1.5s;
+    }
+    
+    #en14{
+        animation-delay: anim22;
+        animation-delay: 4s;
+    }
+    
+    #en15{
+        animation-name: anim20;
+        animation-delay: 2s;
+    }
+    
+    #en16{
+        animation-name: anim19;
+        animation-delay: 1s;
+    }
+    
+    #en17{
+        animation-name: anim22;
+        animation-delay: 1s;
+    }
+    
+    #en18{
+        animation-name: anim26;
+        animation-delay: 1s;
+    }
+    
+    #en19{
+        animation-name: anim28;
+        animation-delay: 0.5s;
+    }
+    
+    #en20{
+        animation-name: anim28;
+        animation-delay: 7s;
+    }
+    
+    #en21{
+        animation-name: anim30;
+        animation-delay: 6.5s;
+    }
+    
+    #en22{
+        animation-name: anim28;
+        animation-delay: 8s;
+    }
+    
+    #en23{
+        animation-name: anim27;
+        animation-delay: 8s;
+    }
+    
+    #en24{
+        animation-name: anim29;
+        animation-delay: 7s;
+    }
+    
+    #en25{
+        animation-name: anim28;
+        animation-delay: 5s;
+    }
+    
+    #en26{
+        animation-name: anim26;
+        animation-delay: 4.5s;
+    }
+    
+    #en27{
+        animation-name: anim29;
+        animation-delay: 5s;
+    }
+    
+    #en28{
+        animation-name: anim26;
+        animation-delay: 6s;
+    }
+    
+    #en29{
+        animation-name: anim30;
+        animation-delay: 6s;
+    }
+    
+    #en30{
+        animation-name: anim19;
+        animation-delay: 6s;
+    }
+    
+    #en31{
+        animation-name: anim22;
+        animation-delay: 5s;
+    }
+    
+    #en32{
+        animation-name: anim24;
+        animation-delay: 5.5s;
+    }
+    
+    #en33{
+        animation-name: anim22;
+        animation-delay: 8s;
+    }
+    
+    #en34{
+        animation-name: anim23;
+        animation-delay: 7s;
+    }
+    
+    #en35{
+        animation-name: anim22;
+        animation-delay: 10.5s;
+    }
+    
+    #en36{
+        animation-name: anim25;
+        animation-delay: 9s;
+    }
+    
+    #en37{
+        animation-name: anim19;
+        animation-delay: 7s;
+    }
+    
+    #en38{
+        animation-name: anim20;
+        animation-delay: 6s;
+    }
+    
+    #en39{
+        animation-name: anim30;
+        animation-delay: 5s;
+    }
+    
+    #en40{
+        animation-name: anim23;
+        animation-delay: 3s;
+    }
+    
+    #en41{
+        animation-name: anim26;
+        animation-delay: 2s;
+    }
+    
+    #en42{
+        animation-name: anim26;
+        animation-delay: 3s;
+    }
+    
+    #en43{
+        animation-name: anim29;
+        animation-delay: 3s;
+    }
+    
+    #en44{
+        animation-name: anim30;
+        animation-delay: 9s;
+    }
+    
+    #en45{
+        animation-name: anim29;
+        animation-delay: 5s;
+    }
+    
+    #en46{
+        animation-name: anim26;
+        animation-delay: 4s;
+    }
+    
+    #en47{
+        animation-name: anim21;
+        animation-delay: 5s;
+    }
+    
+    #en48{
+        animation-name: anim22;
+        animation-delay: 7s;
+    }
+    
+    #en49{
+        animation-name: anim25;
+        animation-delay: 7s;
+    }
+    
+    #en50{
+        animation-name: anim30;
+        animation-delay: 2s;
+    }
+    
+    #en51{
+        animation-name: anim28;
+        animation-delay: 12s;
+    }
+    
+    #en52{
+        animation-name: anim20;
+        animation-delay: 8s;
+    }
+    
+    #en53{
+        animation-name: anim19;
+        animation-delay: 9s;
+    }
+    
+    #en54{
+        animation-name: anim23;
+        animation-delay: 13s;
+    }
+    
+    #en55{
+        animation-name: anim22;
+        animation-delay: 8s;
+    }
+    
+    #en56{
+        animation-name: anim25;
+        animation-delay: 12s;
+    }
+    
+    #en57{
+        animation-name: anim22;
+        animation-delay: 14s;
+    }
+    
+    #en58{
+        animation-name: anim23;
+        animation-delay: 9s;
+    }
+    
+    #en59{
+        animation-name: anim22;
+        animation-delay: 12s;
+    }
+    
+    #en60{
+        animation-name: anim25;
+        animation-delay: 14s;
+    }
+    
+    #en61{
+        animation-name: anim21;
+        animation-delay: 15s;
+    }
+    
+    #en62{
+        animation-name: anim24;
+        animation-delay: 12s;
+    }
+    
+    #en63{
+        animation-name: anim22;
+        animation-delay: 9.5s;
+    }
+    
+    #en64{
+        animation-name: anim23;
+        animation-delay: 15s;
+    }
+    
+    #en65{
+        animation-name: anim22;
+        animation-delay: 12s;
+    }
+    
+    #en66{
+        animation-name: anim25;
+        animation-delay: 4s;
+    }
+    
+    #en67{
+        animation-name: anim24;
+        animation-delay: 8s;
+    }
+    
+    #en68{
+        animation-name: anim22;
+        animation-delay: 14s;
+    }
+    
+    #en69{
+        animation-name: anim25;
+        animation-delay: 16s;
+    }
+    
+    #en70{
+        animation-name: anim19;
+        animation-delay: 14s;
+    }
+    
+    #en71{
+        animation-name: anim24;
+        animation-delay: 16s;
+    }
+    
+    #en72{
+        animation-name: anim25;
+        animation-delay: 15s;
+    }
+    
+    #en73{
+        animation-name: anim29;
+        animation-delay: 8s;
+    }
+    
+    #en74{
+        animation-name: anim28;
+        animation-delay: 14s;
+    }
+    
+    #en75{
+        animation-name: anim30;
+        animation-delay: 9s;
+    }
+    
+    #en76{
+        animation-name: anim28;
+        animation-delay: 14s;
+    }
+    
+    #en77{
+        animation-name: anim30;
+        animation-delay:14s;
+    }
+    
+    #en78{
+        animation-name: anim28;
+        animation-delay: 16s;
+    }
+    
+    #en79{
+        animation-name: anim30;
+        animation-delay: 11s;
+    }
+    
+    #en80{
+        animation-name: anim26;
+        animation-delay: 8s;
+    }
+    
+    #en81{
+        animation-name: anim26;
+        animation-delay: 13s;
+    }
+    
+    #en82{
+        animation-name: anim30;
+        animation-delay: 16.5s;
+    }
+    
+    #en83{
+        animation-name: anim26;
+        animation-delay: 7s;
+    }
+    
+    #en84{
+        animation-name: anim30;
+        animation-delay: 15s;
+    }
+    
+    #en85{
+        animation-name: anim28;
+        animation-delay: 9s;
+    }
+    
+    #en86{
+        animation-name: anim26;
+        animation-delay: 10s;
+    }
+    
+    #en87{
+        animation-name: anim29;
+        animation-delay: 14s;
+    }
+    
+    #en88{
+        animation-name: anim26;
+        animation-delay: 11s;
+    }
+    
+    #en89{
+        animation-name: anim26;
+        animation-delay: 16s;
+    }
+    
+    #en90{
+        animation-name: anim26;
+        animation-delay: 11s;
+    }
+    
+    #en91{
+        animation-name: anim29;
+        animation-delay: 2.5s;
+    }
+    
+    #en92{
+        animation-name: anim30;
+        animation-delay: 13.4s;
+    }
+    
+    #en93{
+        animation-name: anim28;
+        animation-delay: 15s;
+    }
+    
+    #en94{
+        animation-name: anim30;
+        animation-delay: 14.4s;
+    }
+    
+    #en95{
+        animation-name: anim26;
+        animation-delay: 15s;
+    }
+    
+    #en96{
+        animation-name: anim29;
+        animation-delay: 16s;
+    }
+    
+    #en97{
+        animation-name: anim30;
+        animation-delay: 15s;
+    }
+    
+    #en98{
+        animation-name: anim26;
+        animation-delay: 13.5s;
+    }
+    
+    #en99{
+        animation-name: anim28;
+        animation-delay: 12s;
+    }
+    
+    #en100{
+        animation-name: anim28;
+        animation-delay: 13s;
+    }
+    .playpause {
+        bottom: 320px;
+    }
+    .soundoptions {
+        bottom: 320px;
+    }
+    #pausepopup {
+        height: 150px;
+        left: 10%;
+        top: 10%;
+    }
+    #resume {
+        margin-left: 62px;
+        margin-top: 30px;
+    }
 }
