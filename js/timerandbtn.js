@@ -23,8 +23,10 @@ function updateTimer() {
 
     const soundpausebtn = document.getElementById('soundpause');
     soundpausebtn.classList.add('hidething');
+    soundpausebtn.style.display="none";
     const soundplaybtn = document.getElementById('soundplay');
     soundplaybtn.classList.add('hidething');
+    soundplaybtn.style.display="none";
 
     const x = localStorage.getItem("mystorage");
     if (x.includes("bag") == true) {
