@@ -83,6 +83,7 @@ vidconsumption.onended = function() {
     document.getElementById("processvideo").style.display = "none";
     document.getElementById("consumption").style.display = "none";
     document.getElementById("backbuttonvidconsumption").style.display = "none";
+    document.getElementById("processnav").style.display = "block";
 };
 
 var vidconfusion = document.getElementById("confusion");
@@ -90,6 +91,7 @@ vidconfusion.onended = function() {
     document.getElementById("processvideo").style.display = "none";
     document.getElementById("confusion").style.display = "none";
     document.getElementById("backbuttonvidconfusion").style.display = "none";
+    document.getElementById("processnav").style.display = "block";
 };
 
 var vidaccidental = document.getElementById("accidental");
@@ -97,4 +99,5 @@ vidaccidental.onended = function() {
     document.getElementById("processvideo").style.display = "none";
     document.getElementById("accidental").style.display = "none";
     document.getElementById("backbuttonvidaccidental").style.display = "none";
+    document.getElementById("processnav").style.display = "block";
 };
