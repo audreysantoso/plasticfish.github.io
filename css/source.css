@@ -44,19 +44,6 @@ body{
     width: 70px;
 }
 
-.soundoptions{
-    z-index: 10;
-    background-color: transparent;
-    width: 60px;
-    height: 40px;
-    border: none;
-    background-size: contain;
-    cursor: pointer;
-    position: fixed;
-    bottom: 50px;
-    left: 30px;
-}
-
 .soundoptionsplay{
     background-image: url('../images/icon/vol.png');
     background-repeat: no-repeat;
@@ -78,10 +65,10 @@ body{
     cursor: pointer;
 }
 
-.playpause{
+.playpause {
     position: fixed;
-    top: 36px;
-    left: 1235px;
+    top: 710px;
+    left: 120px;
     width: 40px;
     height: 40px;
     background-color: transparent;
@@ -98,24 +85,6 @@ body{
 
 #playpausepause{
     background-image: url('../images/icon/pause.png');
-}
-
-.lives{
-    height: 40px;
-    position: fixed;
-    bottom: 40px;
-    right: 120px;
-}
-
-.heart{
-    width: 50px;
-    height: 40px;
-    float: left;
-    margin-left: 10px;
-}
-
-#heart1, #heart2, #heart3{
-    display: block;
 }
 
 .end{
@@ -200,8 +169,8 @@ body{
     background-size: contain;
     cursor: pointer;
     position: fixed;
-    top: 31px;
-    left: 1141px;
+    top: 710px;
+    left: 30px;
 }
 
 #restartbtn{
@@ -1099,7 +1068,7 @@ nav{
     font-size: 15px;
     line-height: 19px;
     text-align: center;
-    color: #8FAFED;
+    color: #1e4395;;
     border: none;
     background-color: transparent;
     cursor: pointer;
