@@ -508,6 +508,7 @@ function diningroom(){
 	document.getElementById("filamentsonedum").style.backgroundImage = "url('images/plates/pet.png')";
 	document.getElementById("filamentsonedum").style.height = "170px";
 	document.getElementById("filamentsonedum").style.width = "220px";
+	document.getElementById("filamentsonedum").style.left = "360px";
 
 
 	document.getElementById("filamentsthreedum").style.backgroundImage = "url('images/plates/pp.png')";

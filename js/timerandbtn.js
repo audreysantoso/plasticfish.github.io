@@ -127,7 +127,7 @@ function updateTimer() {
 // Function to start the timer
 function startgame() {
     timerValue = 20;
-  var fish = document.getElementsByClassName("fish");
+    var fish = document.getElementsByClassName("fish");
     for(var x=0; x < fish.length; x++)
     {
         fish[x].style.animationPlayState="running";
@@ -141,7 +141,7 @@ function restartgame() {
     location.reload();
     localStorage.clear();
     document.getElementById('intropopup').style.display="none";
-  }
+}
 
 // Function to pause the timer
 function pause() {
@@ -158,7 +158,7 @@ function pause() {
 
 // Function to resume the timer
 function play() {
-  var fish = document.getElementsByClassName("fish");
+    var fish = document.getElementsByClassName("fish");
     for(var x=0; x < fish.length; x++)
     {
         fish[x].style.animationPlayState="running";
@@ -183,7 +183,6 @@ function mutepopsound(){
 function enablepopsound(){
     pop.muted = false;
 }
-
 
 function hidebag(){
     document.getElementById('bag').style.display="none";

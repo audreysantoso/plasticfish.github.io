@@ -59,7 +59,7 @@ body{
     left: -500px;
     width: 15%;
     position: absolute;
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-timing-function: linear;
     animation-play-state: paused;
     cursor: pointer;
