@@ -2904,9 +2904,9 @@ function finedining(){
 
 function finediningresize() {
 	if (window.innerWidth>=widths[0] && window.innerWidth<widths[1]) {
-	finediningsmall();
+		finediningsmall();
 	} else if (window.innerWidth>=widths[0] && window.innerWidth<widths[2]) {
-	finedining();
+		finedining();
 	}
 	}
 window.onresize = finediningresize;
@@ -2915,15 +2915,15 @@ finediningresize();
 function diningsmall(){
 	document.getElementById("bodyeffects").style.backgroundImage = "url('images/platesid/dining.png')";
 	
-		document.getElementById("picnicbtnsmall").style.backgroundColor = "white";
-		document.getElementById("picnicbtnsmall").style.border = "#13448d solid 3px";
-		document.getElementById("picnicbtnsmall").style.color = "#13448d";
-		document.getElementById("finediningbtnsmall").style.backgroundColor = "white";
-		document.getElementById("finediningbtnsmall").style.border = "#13448d solid 3px";
-		document.getElementById("finediningbtnsmall").style.color = "#13448d";
-		document.getElementById("diningroombtnsmall").style.backgroundColor = "#13448d";
-		document.getElementById("diningroombtnsmall").style.border = "#13448d solid 3px";
-		document.getElementById("diningroombtnsmall").style.color = "white";
+	document.getElementById("picnicbtnsmall").style.backgroundColor = "white";
+	document.getElementById("picnicbtnsmall").style.border = "#13448d solid 3px";
+	document.getElementById("picnicbtnsmall").style.color = "#13448d";
+	document.getElementById("finediningbtnsmall").style.backgroundColor = "white";
+	document.getElementById("finediningbtnsmall").style.border = "#13448d solid 3px";
+	document.getElementById("finediningbtnsmall").style.color = "#13448d";
+	document.getElementById("diningroombtnsmall").style.backgroundColor = "#13448d";
+	document.getElementById("diningroombtnsmall").style.border = "#13448d solid 3px";
+	document.getElementById("diningroombtnsmall").style.color = "white";
 	
 	
 		document.getElementById("plate1").style.backgroundImage = "url('images/platesid/plate1.png')";
@@ -3619,15 +3619,15 @@ function diningsmall(){
 function dining(){
 	document.getElementById("bodyeffects").style.backgroundImage = "url('images/platesid/dining.png')";
 
-	document.getElementById("picnicbtnsmall").style.backgroundColor = "white";
-	document.getElementById("picnicbtnsmall").style.border = "#13448d solid 3px";
-	document.getElementById("picnicbtnsmall").style.color = "#13448d";
-	document.getElementById("finediningbtnsmall").style.backgroundColor = "white";
-	document.getElementById("finediningbtnsmall").style.border = "#13448d solid 3px";
-	document.getElementById("finediningbtnsmall").style.color = "#13448d";
-	document.getElementById("diningroombtnsmall").style.backgroundColor = "#13448d";
-	document.getElementById("diningroombtnsmall").style.border = "#13448d solid 3px";
-	document.getElementById("diningroombtnsmall").style.color = "white";
+	document.getElementById("picnicbtn").style.backgroundColor = "white";
+	document.getElementById("picnicbtn").style.border = "#13448d solid 3px";
+	document.getElementById("picnicbtn").style.color = "#13448d";
+	document.getElementById("finediningbtn").style.backgroundColor = "white";
+	document.getElementById("finediningbtn").style.border = "#13448d solid 3px";
+	document.getElementById("finediningbtn").style.color = "#13448d";
+	document.getElementById("diningroombtn").style.backgroundColor = "#13448d";
+	document.getElementById("diningroombtn").style.border = "#13448d solid 3px";
+	document.getElementById("diningroombtn").style.color = "white";
 
 
 	document.getElementById("plate1").style.backgroundImage = "url('images/platesid/plate1.png')";
